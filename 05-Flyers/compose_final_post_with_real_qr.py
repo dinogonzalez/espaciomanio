@@ -1,11 +1,11 @@
-import os
+﻿import os
 from PIL import Image, ImageDraw, ImageFont
 
 # Set up paths
 base_dir = r"C:\Users\dinog\OneDrive\Desktop\Proyectos de Trabajo\Proyecto Parcela\05-Flyers"
 logo_path = os.path.join(base_dir, "logo_espacio_manio_oficial.png")
-pool_path = os.path.join(base_dir, "fotos_reales", "piscina_15x7.jpg")
-green_path = os.path.join(base_dir, "fotos_reales", "pradera_flores_oficial.jpg")
+pool_path = os.path.join(base_dir, "piscina_15x7.jpg")
+green_path = os.path.join(base_dir, "pradera_flores_oficial.jpg")
 qr_path = os.path.join(base_dir, "qr_whatsapp_oficial.png")
 output_post = os.path.join(base_dir, "..", "04-Instagram", "post_lanzamiento_instagram.png")
 desktop_post = r"C:\Users\dinog\OneDrive\Desktop\POST_INSTAGRAM_LANZAMIENTO_NUEVA_MARCA.png"
@@ -90,7 +90,7 @@ if os.path.exists(green_path):
     canvas.paste(green_img, (gx, gy))
 
 # 5. Services Line Text (750px to 790px)
-serv_text = "Piscina 15x7m  ·  Quincho  ·  Áreas Verdes  ·  Baños  ·  Estacionamiento"
+serv_text = "Piscina 15x7m  Â·  Quincho  Â·  Ãreas Verdes  Â·  BaÃ±os  Â·  Estacionamiento"
 sbox = font_bold.getbbox(serv_text)
 stw = sbox[2] - sbox[0]
 draw.text(((width - stw)//2, 755), serv_text, fill="#0f172a", font=font_bold)
@@ -106,7 +106,7 @@ ctw, cth = cbox[2] - cbox[0], cbox[3] - cbox[1]
 draw.text((cx_btn + (cta_w - ctw)//2, cy_btn + (cta_h - cth)//2 - 2), cta_txt, fill="white", font=font_bold)
 
 # 7. Address (875px to 905px)
-addr_txt = "Lonquén Sur. 38 1/2. Talagante."
+addr_txt = "LonquÃ©n Sur. 38 1/2. Talagante."
 abox = font_bold.getbbox(addr_txt)
 atw = abox[2] - abox[0]
 draw.text(((width - atw)//2, 872), addr_txt, fill="#0f172a", font=font_bold)
@@ -119,7 +119,7 @@ if os.path.exists(qr_path):
     qr_img = Image.open(qr_path).convert("RGBA")
     qr_img = qr_img.resize((130, 130), Image.Resampling.LANCZOS)
     canvas.paste(qr_img, (40, 935), qr_img)
-    draw.text((185, 975), "Escanea y\nescríbenos", fill="white", font=font_bold)
+    draw.text((185, 975), "Escanea y\nescrÃ­benos", fill="white", font=font_bold)
 
 # Phone & Instagram on right footer
 draw.text((520, 950), "WhatsApp: +56 9 8888 6174", fill="#25D366", font=font_phone)
@@ -129,3 +129,4 @@ draw.text((520, 1005), "Instagram: @espaciomanio", fill="#38bdf8", font=font_sub
 canvas.save(output_post)
 canvas.save(desktop_post)
 print(f"Final scannable post generated and saved at:\n  - {output_post}\n  - {desktop_post}")
+
