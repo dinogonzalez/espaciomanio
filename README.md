@@ -2,7 +2,7 @@
 
 Sitio web oficial, identidad corporativa y sistema de cotización de disponibilidad para **Espacio Mañio**, exclusiva parcela para eventos y descanso ubicados en **Lonquén Sur, Paradero 38 1/2, Comuna de Talagante**.
 
-![Logo Espacio Mañio](logo_horizontal_espanol.png)
+![Logo Oficial Espacio Mañio](logo_oficial_espacio_manio.png)
 
 ---
 
