@@ -1,90 +1,74 @@
-# Templates de WhatsApp – Espacio Mañio
+# 📲 Plantillas Oficiales de Respuestas para WhatsApp Business
+## ESPACIO MAÑIO — TALAGANTE
 
-## 1) Bienvenida / Consulta inicial
-
-Hola! 👋 Bienvenido/a a **Espacio Mañio**. 
-
-Te contamos que contamos con:
-🌊 Piscina
-🍖 Quincho
-🌳 Amplias áreas verdes
-🚗 Estacionamiento para 30+ autos
-🚻 Baños disponibles
-
-Ideal para paseos familiares, cumpleaños, paseos de colegios y eventos privados en Talagante.
-
-Para enviarte un presupuesto a tu medida, necesito:
-1️⃣ Fecha tentativa del evento
-2️⃣ Número de personas aproximado
-3️⃣ Tipo de evento (cumpleaños, paseo familiar, colegio, etc.)
-
-Te lo armo a la brevedad! ✅
+Este documento contiene las plantillas oficiales listas para copiar y pegar en WhatsApp Business para responder cotizaciones en menos de 1 minuto.
 
 ---
 
-## 2) Envío de presupuesto confirmado
+### 1. 🟢 Plantilla: Saludo Inicial y Cotización General
 
-Hola! Te comparto tu presupuesto referencial para **Espacio Mañio**:
-
-📅 Fecha: {fecha}
-👥 Personas: {personas}
-💰 Valor referencial: ${valor} por persona
-💵 Total estimado: ${total}
-
-Condiciones:
-- Seña del 30–50% para confirmar
-- Saldo antes del ingreso
-- Horario sugerido: 10:00 a 20:00 hrs
-
-Para confirmar necesito:
-✔️ Datos del titular
-✔️ Comprobante de seña
-✔️ Lista de servicios adicionales si los requiere
-
-Quedo atento/a para ajustar detalles! 🎉
-
----
-
-## 3) Confirmación de reserva
-
-Reserva confirmada! ✅
-
-Te esperamos el día {fecha} en **Espacio Mañio**.
-Horario sugerido: 10:00 a 20:00 hrs.
-
-Recomendaciones:
-- Llegar 15 minutos antes paraCheck-in
-- Traer protector solar y toallas
-- Respetar horario de finalización
-- Dejar quincho y baños limpios al finalizar
-
-Dudas o cambios, escribe al +56 9 29.55258 🙌
+> 🌿 **¡Hola! Bienvenido(a) a Espacio Mañio — Talagante** 🏊✨
+> 
+> Muchas gracias por comunicarte con nosotros. Tu evento o paseo privado estará 100% exclusivo para tu grupo durante toda la jornada.
+> 
+> 📍 **Ubicación:** Lonquén Sur, Paradero 38 1/2, Talagante.  
+> ⏰ **Horario de jornada:** 10:00 a 19:30 hrs.
+> 
+> **Nuestras instalaciones incluyen:**
+> 🏊‍♂️ Espectacular Piscina de 15 x 7 metros (105 m² de agua cristalina)  
+> 🥩 Quincho techado equipado con parrilla  
+> 🌳 Extensas áreas verdes arboladas  
+> 🚻 Baños y vestidores higienizados  
+> 🚗 Estacionamiento privado cerrado dentro del recinto  
+> 
+> Para darte la tarifa exacta y disponibilidad, por favor indícanos:  
+> 🗓️ **Fecha estimada de tu evento:**  
+> 👥 **Cantidad aproximada de asistentes:**  
+> 🎈 **Tipo de evento** *(Paseo familiar, empresa, cumpleaños, paseo de curso)*.
+> 
+> ¡Quedamos atentos para reservar tu fecha! 😊
 
 ---
 
-## 4) Recordatorio día antes
+### 2. 👥 Plantilla: Paseos de Empresa & Colegios (Grupos Medianos / Grandes)
 
-Hola! Mañana tienes tu evento en **Espacio Mañio** 🌊
-
-Recordatorios importantes:
-✅ Llegada recomendada: 9:45 hrs
-✅ Traer protector solar
-✅ Documento del titular
-✅ Seña pagada + saldo pendiente
-
-Pronóstico: {clima}
-Cualquier cosa, escríbenos al +56 9 29.55258
-
-Que lo disfruten! 🎉
+> 🏢 **Cotización Paseo de Empresa / Colegio en Espacio Mañio** 🌳
+> 
+> ¡Hola [Nombre]! Excelente elección. Nuestro recinto es ideal para jornadas de integración, esparcimiento y paseos de fin de año.
+> 
+> **Condiciones de servicio:**
+> 🔒 **Exclusividad Total:** No compartes el recinto con ningún otro grupo.  
+> 🏊 **Seguridad:** Piscina cercada y amplias zonas de sombra para colchonetas y reposeras.  
+> 🥩 **Quincho:** Parrilla de gran tamaño lista para asados masivos.
+> 
+> 💬 *Indícanos la fecha deseada y el número exacto de asistentes para enviarte la propuesta formal en PDF.*
 
 ---
 
-## 5) Cierre y agradecimiento post-evento
+### 3. 🏦 Plantilla: Instrucciones de Reserva y Datos de Transferencia
 
-Gracias por elegir **Espacio Mañio**! 🙌
+> 📌 **¡Tu fecha [FECHA] queda pre-reservada!**
+> 
+> Para confirmar la reserva del 100% de la exclusividad de **Espacio Mañio** el día **[FECHA DE EVENTO]**, se debe abonar el 50% del total.
+> 
+> **Datos de Transferencia:**  
+> 🏦 **Banco:** [Nombre Banco]  
+> 👤 **Nombre:** [Nombre Titular]  
+> 🆔 **RUT:** [RUT Titular]  
+> 📧 **Correo:** [correo@dominio.cl]  
+> 💰 **Monto a transferir (50% seña):** $[MONTO SEÑA]  
+> 
+> 📩 Una vez realizada la transferencia, envíanos el comprobante por acá para registrar tu reserva y enviarte la confirmación formal. ¡Los esperamos! ☀️
 
-Esperamos que hayan disfrutado mucho.
-Si quieren compartir fotos, etiquétanos en Instagram @espaciomanio.
+---
 
-Reserva para la próxima fecha?
-Escribimos al +56 9 29.55258
+### 4. 📍 Plantilla: Indicaciones de Llegada (Waze / Google Maps)
+
+> 📍 **¿Cómo llegar a Espacio Mañio?**
+> 
+> Dirección: **Lonquén Sur, Paradero 38 1/2, Talagante**.
+> 
+> 🗺️ **Google Maps:** [Link Google Maps]  
+> 🚗 **Waze:** Buscar *"Espacio Mañio Talagante"*
+> 
+> *Nota: Al llegar al Paradero 38 1/2, verás el portón de acceso privado a la parcela.*
