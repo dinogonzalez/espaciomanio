@@ -1,6 +1,9 @@
 # 🌳 Espacio Mañio — Paseos & Eventos Privados (Talagante)
 
-Sitio web oficial, identidad corporativa y sistema de cotización de disponibilidad para **Espacio Mañio**, exclusiva parcela para eventos y descanso ubicados en **Lonquén Sur, Paradero 38 1/2, Comuna de Talagante**.
+Material de identidad, operación, Instagram y una maqueta web local para
+**Espacio Mañio**, recinto para eventos y descanso ubicado en **Lonquén Sur,
+Paradero 38 1/2, comuna de Talagante**. Actualmente no existe un sitio web
+público activo.
 
 ![Logo Oficial Espacio Mañio](logo_oficial_espacio_manio.png)
 
@@ -19,15 +22,14 @@ Sitio web oficial, identidad corporativa y sistema de cotización de disponibili
 
 ## 📱 Módulo de Cotización & Integración WhatsApp
 
-El sitio web incluye un motor de cotización interactivo en el cual el visitante elige:
+La maqueta web local incluye un motor de cotización interactivo en el cual el visitante elige:
 1. **Fecha solicitada** (con validación de fecha mínima).
 2. **Tipo de evento** (Paseo de día, Cumpleaños, Evento empresa, Reunión familiar).
 3. **Cantidad de asistentes** (1-20, 21-40, 41-70, +70 personas).
 4. **Nombre y comentarios**.
 
-Al hacer clic en **"Consultar por WhatsApp"**, se genera automáticamente una URL enviando un mensaje estructurado directamente a los números oficiales:
-* 🟢 **WhatsApp Principal**: `+56 9 2905 5258`
-* 🟢 **WhatsApp Secundario**: `+56 9 8888 6174`
+Al hacer clic en **"Consultar por WhatsApp"**, se genera automáticamente una URL enviando un mensaje estructurado directamente al canal oficial:
+* 🟢 **WhatsApp principal publicado**: `+56 9 8888 6174`
 * 📷 **Instagram**: `@espaciomanio`
 
 ---
@@ -39,33 +41,24 @@ Proyecto Parcela/
 ├── index.html                           # Estructura HTML5 responsiva y semántica
 ├── styles.css                           # Sistema de diseño, Glassmorphism y CSS Variables
 ├── app.js                               # Lógica JS de calendario, modal y WhatsApp API
+├── 00_DATOS_OFICIALES_ESPACIO_MANIO.md  # Fuente única de datos publicados
 ├── README.md                            # Documentación completa del proyecto
 ├── .gitignore                           # Exclusiones de archivos temporales
-├── afiche_oficial_espacio_manio.png     # Afiche promocional oficial
-├── logo_horizontal_espanol.png          # Logo corporativo horizontal
-├── logo_vertical_espanol.png            # Logo corporativo vertical/emblema
-├── Certificado de Contribuciones-Parcela 13.pdf # Documento tributario SII
-└── Fotos Parcela/                       # 41 Fotos y Videos reales del recinto
+├── logo_oficial_espacio_manio.png       # Logo corporativo vigente
+├── Fotos Parcela/Fotos/                 # Fotografías reales del recinto
+└── 04-Instagram/                        # Contenido y guías para redes sociales
 ```
 
 ---
 
 ## 🚀 Publicación en GitHub Pages / Hosting
 
-Para publicar esta página en internet mediante **GitHub Pages**:
+No hay sitio web publicado. El archivo `index.html` es una maqueta local y no
+debe comunicarse como URL pública. Si en el futuro se decide habilitar una web,
+use siempre la raíz de este repositorio, donde se encuentra ese archivo.
 
-1. Crear un repositorio público en GitHub llamado `espacio-manio`.
-2. Ejecutar en la terminal desde esta carpeta:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit - Espacio Mañio Web & Branding"
-   git branch -M main
-   git remote add origin https://github.com/TU_USUARIO/espacio-manio.git
-   git push -u origin main
-   ```
-3. Ir a **Settings > Pages** en GitHub y seleccionar la rama `main`.
-4. ¡Listo! Tu página quedará en vivo en `https://TU_USUARIO.github.io/espacio-manio/`.
+Antes de activar una web, se debe realizar una revisión específica y confirmar
+que `00_DATOS_OFICIALES_ESPACIO_MANIO.md` mantiene los datos aprobados.
 
 ---
 

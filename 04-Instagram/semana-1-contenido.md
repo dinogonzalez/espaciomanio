@@ -5,8 +5,8 @@
 “¿Dónde juntar a toda la familia sin complicaciones?
 En Espacio Mañio tienes piscina, quincho, áreas verdes y estacionamiento para más de 30 autos.
 Ideal para cumpleaños, paseos familiares y eventos privados en Talagante.
-📍 Lonquén Norte, Paradero 38 1/5, Talagante
-📲 +56 9 29.55258
+📍 Lonquén Sur, Paradero 38 1/2, Talagante
+📲 +56 9 8888 6174
 #EspacioMañio #Talagante #PiscinaTalagante #ArriendoParcela #EventosPrivados”
 
 ## PUBLICACIÓN 2 – Mar
@@ -14,7 +14,7 @@ Ideal para cumpleaños, paseos familiares y eventos privados en Talagante.
 “Piscina amplia para disfrutar sin apuros.
 En Espacio Mañio podés venir con tu grupo grande y tener todo el espacio para ustedes.
 Quincho disponible, baños y áreas verdes.
-Consultá fechas al +56 9 29.55258
+Consultá fechas al +56 9 8888 6174
 #EspacioMañio #Talagante #ArriendoPiscina #PaseoFamiliar”
 
 ## PUBLICACIÓN 3 – Jue
@@ -23,7 +23,7 @@ Consultá fechas al +56 9 29.55258
 En Espacio Mañio hay espacio para todos: piscina, parrilla, estacionamiento y zonas para jugar.
 Ambiente seguro y privado.
 Escribinos para cotizar tu fecha.
-📲 +56 9 29.55258
+📲 +56 9 8888 6174
 #EspacioMañio #PiscinaTalagante #CumpleañosTalagante #ColegiosTalagante”
 
 ## PUBLICACIÓN 4 – Sáb
@@ -32,7 +32,7 @@ Escribinos para cotizar tu fecha.
 Reserva tu fecha en Espacio Mañio.
 Amplio espacio para grupos grandes, cerca de Santiago.
 Disponibilidad entre semana y fines de semana.
-WhatsApp: +56 9 29.55258
+WhatsApp: +56 9 8888 6174
 #EspacioMañio #Talagante #WeekendTalagante #Piscina”
 
 ---
@@ -48,11 +48,11 @@ WhatsApp: +56 9 29.55258
 ### Texto superpuesto
 - Arriba: “Espacio Mañio”
 - Centro: “Piscina · Quincho · Estacionamiento 30+ autos”
-- Final: “+56 9 29.55258”
+- Final: “+56 9 8888 6174”
 
 ### Caption
 “Así se vive en Espacio Mañio 🌊
 Un espacio amplio para tu próxima reunión en Talagante.
 Piscina, quincho, áreas verdes y estacionamiento.
-Escribe al +56 9 29.55258 para consultar disponibilidad.
+Escribe al +56 9 8888 6174 para consultar disponibilidad.
 #EspacioMañio #Talagante #ArriendoParcela #PiscinaTalagante #EventosPrivados”

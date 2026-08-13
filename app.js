@@ -3,7 +3,7 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const WHATSAPP_MAIN = '56929055258';
+  const WHATSAPP_MAIN = '56988886174';
 
   // Set Minimum Date for Reservation to Today
   const dateInput = document.getElementById('fechaEvento');

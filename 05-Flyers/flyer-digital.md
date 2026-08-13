@@ -6,10 +6,10 @@
 
 ## Texto principal
 - Encabezado: ESPACIO MAÑIO
-- Subtítulo: Parcela con piscina · Talagante
-- Servicios: Piscina · Quincho · Áreas verdes · Estacionamiento 30+ autos
-- Precio: desde $7.500–$12.000 por persona
-- Contacto: +56 9 29.55258
+- Subtítulo: Paseos & Eventos Privados · Talagante
+- Servicios: Piscina de 15 x 7 m · Quincho equipado · Áreas verdes · Baños y vestidores · Estacionamiento 30+ vehículos
+- Llamado a la acción: Consulta por valores y fechas disponibles
+- Contacto: +56 9 8888 6174
 - @espaciomanio
 
 ## Instrucciones de armado

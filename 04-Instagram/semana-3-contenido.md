@@ -6,7 +6,7 @@
 En Espacio Mañio hay espacio para todos: piscina, quincho y áreas verdes.
 Estacionamiento amplio para autos y buses.
 Escribinos para cerrar tu salida.
-📲 +56 9 29.55258
+📲 +56 9 8888 6174
 #EspacioMañio #ColegiosTalagante #PaseoColegio”
 
 ## PUBLICACIÓN 2 – Mar
@@ -26,7 +26,7 @@ Consultá tarifas grupales.
 - Estacionamiento 30+ autos
 - Áreas verdes privadas
 Todo en un solo lugar en Talagante.
-Escribe al +56 9 29.55258
+Escribe al +56 9 8888 6174
 #EspacioMañio #ArriendoParcela”
 
 ## PUBLICACIÓN 4 – Sáb
@@ -34,5 +34,5 @@ Escribe al +56 9 29.55258
 “Esta es la temporada de piscina y encuentros.
 Reservá tu fecha en Espacio Mañio.
 Consultas rápidas por WhatsApp.
-📲 +56 9 29.55258
+📲 +56 9 8888 6174
 #EspacioMañio #Talagante #Piscina”

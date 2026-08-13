@@ -8,9 +8,9 @@
 
 ## Estructura
 ### 1) Info
-- Ubicación: Lonquén Norte, Paradero 38 1/5, Talagante
+- Ubicación: Lonquén Sur, Paradero 38 1/2, Talagante
 - Servicios: piscina, quincho, baños, estacionamiento 30+ autos, áreas verdes
-- Contacto: +56 9 29.55258
+- Contacto: +56 9 8888 6174
 
 ### 2) Precios
 - Copia corta de 01-Presupuestos/presupuesto-espacio-manio.html en texto plano

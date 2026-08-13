@@ -11,7 +11,7 @@
 ## Texto superpuesto en Instagram
 - Arriba: “Espacio Mañio”
 - Centro: “Piscina · Quincho · Estacionamiento 30+ autos”
-- Final: “Reservas al +56 9 29.55258”
+- Final: “Reservas al +56 9 8888 6174”
 
 ## Hashtags para caption
 #EspacioMañio #Talagante #ArriendoParcela #PiscinaTalagante #EventosPrivados #PaseoFamiliar
@@ -19,5 +19,5 @@
 ## Caption de ejemplo
 “Así se vive en Espacio Mañio 🌊
 Piscina, quincho, áreas verdes y estacionamiento amplio para tu próxima reunión en Talagante.
-Escribe al +56 9 29.55258 para consultar disponibilidad.
+Escribe al +56 9 8888 6174 para consultar disponibilidad.
 #EspacioMañio #Talagante #ArriendoParcela #PiscinaTalagante #EventosPrivados #PaseoFamiliar”

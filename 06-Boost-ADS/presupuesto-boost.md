@@ -12,7 +12,7 @@ Aumentar consultas por WhatsApp desde Talagante y comunas cercanas.
 ## Formatos
 1. Reel / video corto
    - Objetivo: visual del lugar
-   - CTA: “Escribe al +56 9 29.55258”
+   - CTA: “Escribe al +56 9 8888 6174”
 2. Foto estática
    - Objetivo: servicios y ventajas
    - CTA: “Escríbenos para fechas disponibles”

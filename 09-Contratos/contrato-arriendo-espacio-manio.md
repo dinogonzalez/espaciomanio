@@ -60,5 +60,5 @@ __________________________________            __________________________________
       Espacio Mañio - Talagante                     RUT: [RUT CLIENTE]
 ```
 
-* **Contacto Comercial:** +56 9 8888 6174 / +56 9 2905 5258
+* **Contacto Comercial:** +56 9 8888 6174
 * **Instagram:** `@espaciomanio`

@@ -29,5 +29,5 @@
 - [ ] Guardar fotos del evento para Instagram
 
 ## Contacto de respaldo
-- Dueño: +56 9 29.55258
+- Contacto comercial: +56 9 8888 6174
 - Instagram: @espaciomanio

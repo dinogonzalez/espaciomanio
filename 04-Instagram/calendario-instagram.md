@@ -12,10 +12,10 @@ Generar consultas por WhatsApp desde Talagante y comunas cercanas.
 ## Copy sugeridos
 
 ### Post 1 – Presentación
-📍 Lonquén Norte, Paradero 38 1/5, Talagante
+📍 Lonquén Sur, Paradero 38 1/2, Talagante
 ¿Buscas un espacio amplio para tu próxima reunión familiar o evento?
 En Espacio Mañio tenemos piscina, quincho completo, estacionamiento para 30+ autos y áreas verdes.
-Escribe al WhatsApp +56 9 29.55258 para cotizar.
+Escribe al WhatsApp +56 9 8888 6174 para cotizar.
 #EspacioMañio #Talagante #PiscinaTalagante #ArriendoParcela
 
 ### Post 2 – Piscina
@@ -23,7 +23,7 @@ Escribe al WhatsApp +56 9 29.55258 para cotizar.
 Ideal para cumpleaños, paseos de colegios y eventos privados.
 Capacidad amplia para grupos grandes.
 Disponibilidad: entre semana y fines de semana.
-Informes: DM o WhatsApp +56 9 29.55258
+Informes: DM o WhatsApp +56 9 8888 6174
 
 ### Post 3 – Quincho y parrilla
 🍖 Quincho listo para tu evento.

@@ -2,17 +2,10 @@
 .DS_Store
 Thumbs.db
 desktop.ini
-<<<<<<< HEAD
 *.tmp
 *.log
 
 # Temp & scratch files
 node_modules/
-=======
-
-# Temp & Editor files
-*.tmp
-*.log
->>>>>>> 1210e85 (feat: version inicial landing page Espacio Manio)
 .vscode/
 .idea/

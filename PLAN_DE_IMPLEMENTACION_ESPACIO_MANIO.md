@@ -52,7 +52,8 @@ Para continuar en el computador de casa sin perder ningún avance:
 2. Crear/reclamar la ficha `Espacio Mañio - Paseos & Eventos Privados`.
 3. Cargar las 8 fotos ordenadas de la carpeta `08-GMAP\Fotos_Para_Google_Maps`.
 
-### Paso 4: Habilitar el Sitio Web en Vivo (GitHub Pages)
-1. En GitHub (`https://github.com/dinogonzalez/Proyecto-Parcela`), ir a **Settings > Pages**.
-2. Seleccionar Source: `Deploy from a branch` y elegir la rama `master`.
-3. Guardar. Tu sitio web quedará disponible en vivo en pocos minutos.
+### Paso 4: Sitio web (pendiente, no publicar)
+
+Actualmente no existe sitio web público activo. La maqueta local se conserva
+para una futura revisión, pero no se debe habilitar GitHub Pages ni informar una
+URL web hasta que se tome esa decisión expresamente.
