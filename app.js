@@ -46,11 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4. Drone Cinema Video Controls
   const droneVideo = document.getElementById('droneVideo');
   const videoPlayPauseBtn = document.getElementById('videoPlayPauseBtn');
-  const videoSoundBtn = document.getElementById('videoSoundBtn');
   const videoFullscreenBtn = document.getElementById('videoFullscreenBtn');
 
   if (droneVideo) {
-    // Ensure video plays automatically muted
+    // Ensure video plays automatically muted (drone footage has no audio track)
     droneVideo.muted = true;
     droneVideo.play().catch(() => {
       // Browser prevented autoplay, user can click play
@@ -65,18 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           droneVideo.pause();
           videoPlayPauseBtn.innerHTML = '<i class="fa-solid fa-play"></i> <span>Reproducir</span>';
-        }
-      });
-    }
-
-    // Sound Toggle (Mute / Unmute)
-    if (videoSoundBtn) {
-      videoSoundBtn.addEventListener('click', () => {
-        droneVideo.muted = !droneVideo.muted;
-        if (droneVideo.muted) {
-          videoSoundBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i> <span>Activar Sonido</span>';
-        } else {
-          videoSoundBtn.innerHTML = '<i class="fa-solid fa-volume-high"></i> <span>Silenciar</span>';
         }
       });
     }
@@ -102,18 +89,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileShareBtn = document.getElementById('mobileShareBtn');
   const copyShareTextBtn = document.getElementById('copyShareTextBtn');
 
-  const INVITATION_TEXT = `🌿 *ESPACIO MAÑÍO — Paseos & Eventos Privados en Talagante*
-📍 Lonquén Sur, Paradero 38 ½
+  const INVITATION_TEXT = `ESPACIO MAÑÍO — Paseos & Eventos Privados
+Lonquén Sur, Paradero 38 ½, Talagante
 
-Recinto 100% exclusivo para tu grupo:
-🏊‍♂️ Espectacular Piscina de 15x7m (105 m² de agua cristalina)
-🔥 Quincho techado y parrillas para asados
-🌳 Más de 5.000 m² de áreas verdes y sombra
-🚗 Estacionamiento privado cerrado para +30 autos
-⏰ Jornada de arriendo: 10:00 a 18:30 hrs
+Recinto 100% exclusivo para grupos, empresas y colegios.
 
-📲 Contacto y Reservas WhatsApp: +56 9 8888 6174
-🌐 Sitio Oficial: https://espaciomanio.cl`;
+Instalaciones y servicios incluidos:
+• Espectacular Piscina de 15x7 metros (105 m² de agua cristalina)
+• Quincho techado equipado con parrillas para asados
+• Más de 5.000 m² de áreas verdes y sombra natural
+• Estacionamiento privado cerrado para más de 30 vehículos
+• Baños higienizados y camarines
+• Jornada de arriendo: 10:00 a 18:30 horas
+
+Contacto y Reservas: +56 9 8888 6174
+Sitio Web Oficial: https://dinogonzalez.github.io/espaciomanio/`;
 
   function openShareModal() {
     if (shareModal) {
@@ -158,10 +148,32 @@ Recinto 100% exclusivo para tu grupo:
   if (copyShareTextBtn) {
     copyShareTextBtn.addEventListener('click', () => {
       navigator.clipboard.writeText(INVITATION_TEXT).then(() => {
-        showToast('¡Invitación corporativa copiada al portapapeles!');
+        showToast('Invitación corporativa copiada al portapapeles');
       }).catch(() => {
         showToast('Texto copiado');
       });
+    });
+  }
+
+  // QR Selection Tab Switching (Web QR vs WhatsApp QR)
+  const tabWebQrBtn = document.getElementById('tabWebQrBtn');
+  const tabWhatsappQrBtn = document.getElementById('tabWhatsappQrBtn');
+  const panelWebQr = document.getElementById('panelWebQr');
+  const panelWhatsappQr = document.getElementById('panelWhatsappQr');
+
+  if (tabWebQrBtn && tabWhatsappQrBtn && panelWebQr && panelWhatsappQr) {
+    tabWebQrBtn.addEventListener('click', () => {
+      tabWebQrBtn.classList.add('active');
+      tabWhatsappQrBtn.classList.remove('active');
+      panelWebQr.classList.add('active');
+      panelWhatsappQr.classList.remove('active');
+    });
+
+    tabWhatsappQrBtn.addEventListener('click', () => {
+      tabWhatsappQrBtn.classList.add('active');
+      tabWebQrBtn.classList.remove('active');
+      panelWhatsappQr.classList.add('active');
+      panelWebQr.classList.remove('active');
     });
   }
 
@@ -240,15 +252,16 @@ Recinto 100% exclusivo para tu grupo:
     const dateParts = fecha.split('-');
     const dateFormatted = `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`;
 
-    let msg = `Hola *Espacio Mañío* 👋🏻, quisiera consultar valores y disponibilidad para un evento:\n\n`;
-    msg += `📅 *Fecha solicitada*: ${dateFormatted}\n`;
-    msg += `🎉 *Tipo de evento*: ${tipo}\n`;
-    msg += `👥 *Cantidad de asistentes*: ${personas}\n`;
-    if (nombre) msg += `👤 *Nombre cliente*: ${nombre}\n`;
-    if (notas) msg += `📝 *Comentarios/Requerimientos*: ${notas}\n`;
-    msg += `\n📍 *Ubicación*: Lonquén Sur, Paradero 38 1/2, Talagante\n`;
-    msg += `🌐 *Web*: ${SITE_URL}\n\n`;
-    msg += `Quedo atento(a) a su pronta respuesta. ¡Muchas gracias!`;
+    let msg = `Estimados administradores de *Espacio Mañío*:\n\n`;
+    msg += `Quisiera consultar disponibilidad y valores oficiales para el siguiente evento:\n\n`;
+    msg += `• *Fecha solicitada*: ${dateFormatted}\n`;
+    msg += `• *Tipo de evento*: ${tipo}\n`;
+    msg += `• *Cantidad de asistentes*: ${personas}\n`;
+    if (nombre) msg += `• *Nombre del solicitante*: ${nombre}\n`;
+    if (notas) msg += `• *Consultas / Requerimientos*: ${notas}\n`;
+    msg += `• *Recinto*: Lonquén Sur, Paradero 38 1/2, Talagante\n`;
+    msg += `• *Sitio Web*: ${SITE_URL}\n\n`;
+    msg += `Agradezco de antemano su pronta respuesta y cotización formal.`;
 
     const encodedMsg = encodeURIComponent(msg);
     const whatsappUrl = `https://wa.me/${WHATSAPP_MAIN}?text=${encodedMsg}`;

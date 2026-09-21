@@ -57,8 +57,10 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dinogonzalez.github.io/espaciomanio/">
   <meta property="og:title" content="Espacio Mañío · Paseos & Eventos Privados en Talagante">
-  <meta property="og:description" content="Piscina gigante de 15x7m, quincho equipado, áreas verdes y estacionamiento privado. ¡Exclusividad total para tu grupo en Talagante!">
-  <meta property="og:image" content="https://dinogonzalez.github.io/espaciomanio/assets/images/piscina_principal.jpeg">
+  <meta property="og:description" content="Recinto 100% exclusivo para eventos y empresas. Piscina de 15x7m, quincho equipado, áreas verdes y estacionamiento privado.">
+  <meta property="og:image" content="https://dinogonzalez.github.io/espaciomanio/assets/images/og_preview_logo.png">
+  <meta property="og:image:secure_url" content="https://dinogonzalez.github.io/espaciomanio/assets/images/og_preview_logo.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="es_CL">
@@ -68,7 +70,7 @@
   <meta name="twitter:url" content="https://dinogonzalez.github.io/espaciomanio/">
   <meta name="twitter:title" content="Espacio Mañío · Paseos & Eventos Privados en Talagante">
   <meta name="twitter:description" content="Recinto 100% exclusivo: piscina de 15x7m, quincho equipado, áreas verdes y estacionamiento.">
-  <meta name="twitter:image" content="https://dinogonzalez.github.io/espaciomanio/assets/images/piscina_principal.jpeg">
+  <meta name="twitter:image" content="https://dinogonzalez.github.io/espaciomanio/assets/images/og_preview_logo.png">
 
   <!-- PWA & Mobile Icons -->
   <link rel="manifest" href="manifest.json">
@@ -221,8 +223,11 @@
         <div class="glass-card quote-card" id="disponibilidad">
           
           <div class="quote-card-header">
+            <div class="card-brand-emblem">
+              <img src="assets/images/logo_badge_blanco.png" alt="Logotipo Oficial Espacio Mañío" class="card-brand-logo">
+            </div>
             <div class="quote-header-badge"><i class="fa-brands fa-whatsapp"></i> Atención Rápida</div>
-            <h2 class="form-title">¡Cotiza tu Evento Directo!</h2>
+            <h2 class="form-title">Cotiza tu Evento Directo</h2>
             <p class="form-subtitle">Selecciona los datos de tu jornada y te responderemos disponibilidad y valores al instante por WhatsApp.</p>
           </div>
 
@@ -305,9 +310,6 @@
           <div class="video-overlay-bar">
             <button class="video-btn" id="videoPlayPauseBtn" title="Reproducir / Pausar">
               <i class="fa-solid fa-pause"></i> <span>Pausar</span>
-            </button>
-            <button class="video-btn" id="videoSoundBtn" title="Activar o silenciar audio">
-              <i class="fa-solid fa-volume-xmark"></i> <span>Activar Sonido</span>
             </button>
             <button class="video-btn" id="videoFullscreenBtn" title="Ver en pantalla completa">
               <i class="fa-solid fa-expand"></i> <span>Pantalla Completa</span>
@@ -639,7 +641,14 @@
   <!-- Image Lightbox Modal -->
   <div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-hidden="true">
     <button class="modal-close" id="modalClose" aria-label="Cerrar vista previa">&times;</button>
-    <div class="modal-content">
+    <div class="modal-content image-modal-content">
+      <div class="image-modal-brand-header">
+        <img src="assets/images/logo_badge_blanco.png" alt="Logotipo Oficial Espacio Mañío" class="image-modal-logo">
+        <div class="image-modal-brand-info">
+          <span class="image-modal-brand-title">ESPACIO MAÑÍO</span>
+          <span class="image-modal-brand-tag">Paseos & Eventos Privados · Talagante</span>
+        </div>
+      </div>
       <img id="modalImage" src="" alt="Vista ampliada" class="modal-img">
       <div id="modalCaption" class="modal-caption"></div>
       <div class="modal-actions">
@@ -724,30 +733,59 @@
         <div class="share-modal-brand">
           <img src="assets/images/logo_badge_blanco.png" alt="Logotipo Oficial Espacio Mañío" class="share-modal-logo">
         </div>
-        <div class="share-header-badge"><i class="fa-solid fa-qrcode"></i> Código QR Oficial</div>
         <h3 class="share-modal-title">Comparte <span class="text-gradient">Espacio Mañío</span></h3>
-        <p class="share-modal-subtitle">Muestra este código QR desde tu celular para que lo escaneen en persona, o comparte la invitación formal con un toque.</p>
+        <p class="share-modal-subtitle">Selecciona el código QR que deseas mostrar o descargar:</p>
       </div>
 
-      <div class="share-qr-wrapper">
-        <div class="share-qr-card">
-          <img src="assets/images/qr_whatsapp.png" alt="Código QR Espacio Mañío" class="share-qr-image" id="shareQrImg">
-          <span class="share-qr-caption"><i class="fa-solid fa-camera"></i> Escanea con tu cámara para contactar</span>
+      <!-- QR Selection Tabs -->
+      <div class="qr-tabs-nav">
+        <button type="button" class="qr-tab-btn active" id="tabWebQrBtn" data-target="panelWebQr">
+          <i class="fa-solid fa-globe"></i> QR Página Web
+        </button>
+        <button type="button" class="qr-tab-btn" id="tabWhatsappQrBtn" data-target="panelWhatsappQr">
+          <i class="fa-brands fa-whatsapp"></i> QR WhatsApp
+        </button>
+      </div>
+
+      <!-- Panel 1: Website QR -->
+      <div class="qr-display-panel active" id="panelWebQr">
+        <div class="share-qr-wrapper">
+          <div class="share-qr-card">
+            <img src="assets/images/qr_sitio_web.png" alt="Código QR Sitio Web Espacio Mañío" class="share-qr-image">
+            <span class="share-qr-caption"><i class="fa-solid fa-globe"></i> Abre directo la Página Web Oficial</span>
+          </div>
         </div>
+        <p class="qr-instruction-text">Escanea este código con la cámara de cualquier celular para ingresar a la página web oficial, fotos aéreas de dron e instalaciones.</p>
+        <a href="assets/images/qr_sitio_web.png" download="QR_Espacio_Manio_SitioWeb.png" class="btn btn-glass btn-share-action">
+          <i class="fa-solid fa-download"></i> Descargar QR de la Página Web
+        </a>
       </div>
 
+      <!-- Panel 2: WhatsApp QR -->
+      <div class="qr-display-panel" id="panelWhatsappQr">
+        <div class="share-qr-wrapper">
+          <div class="share-qr-card">
+            <img src="assets/images/qr_whatsapp.png" alt="Código QR WhatsApp Espacio Mañío" class="share-qr-image">
+            <span class="share-qr-caption"><i class="fa-brands fa-whatsapp"></i> Abre directo el WhatsApp de Reservas</span>
+          </div>
+        </div>
+        <p class="qr-instruction-text">Escanea este código para abrir directamente una conversación en WhatsApp y consultar fechas disponibles y valores oficiales.</p>
+        <a href="assets/images/qr_whatsapp.png" download="QR_Espacio_Manio_WhatsApp.png" class="btn btn-glass btn-share-action">
+          <i class="fa-solid fa-download"></i> Descargar QR de WhatsApp
+        </a>
+      </div>
+
+      <hr class="share-divider">
+
+      <!-- Additional Corporate Actions -->
       <div class="share-actions-group">
-        <a href="https://wa.me/?text=%F0%9F%8C%BF%20*ESPACIO%20MA%C3%91%C3%8DO%20%E2%80%94%20Paseos%20%26%20Eventos%20Privados%20en%20Talagante*%0A%F0%9F%93%8D%20Lonqu%C3%A9n%20Sur%2C%20Paradero%2038%20%C2%BD%0A%0ARecinto%20100%25%20exclusivo%20para%20tu%20grupo%3A%0A%E2%99%85%EF%B8%8F%20Espectacular%20Piscina%20de%2015x7m%20(105%20m%C2%B2%20de%20agua%20cristalina)%0A%F0%9F%94%A5%20Quincho%20techado%20y%20parrillas%20para%20asados%0A%F0%9F%8C%B3%20M%C3%A1s%20de%205.000%20m%C2%B2%20de%20%C3%A1reas%20verdes%20y%20sombra%0A%F0%9F%9A%97%20Estacionamiento%20privado%20cerrado%20para%20%2B30%20autos%0A%E2%8F%B0%20Jornada%20de%20arriendo%3A%2010%3A00%20a%2018%3A30%20hrs%0A%0A%F0%9F%93%B2%20Contacto%20y%20Reservas%20WhatsApp%3A%20%2B56%209%208888%206174" target="_blank" rel="noopener" class="btn btn-whatsapp btn-share-action" id="shareWhatsappActionBtn">
-          <i class="fa-brands fa-whatsapp"></i> Compartir por WhatsApp
+        <a href="https://wa.me/?text=ESPACIO%20MA%C3%91%C3%8DO%20%E2%80%94%20Paseos%20%26%20Eventos%20Privados%0ALonqu%C3%A9n%20Sur%2C%20Paradero%2038%20%C2%BD%2C%20Talagante%0A%0ARecinto%20100%25%20exclusivo%20para%20grupos%2C%20empresas%20y%20colegios.%0A%0AInstalaciones%20y%20servicios%20incluidos%3A%0A%E2%80%A2%20Espectacular%20Piscina%20de%2015x7%20metros%20(105%20m%C2%B2%20de%20agua%20cristalina)%0A%E2%80%A2%20Quincho%20techado%20equipado%20con%20parrillas%20para%20asados%0A%E2%80%A2%20M%C3%A1s%20de%205.000%20m%C2%B2%20de%20%C3%A1reas%20verdes%20y%20sombra%20natural%0A%E2%80%A2%20Estacionamiento%20privado%20cerrado%20para%20m%C3%A1s%20de%2030%20veh%C3%ADculos%0A%E2%80%A2%20Ba%C3%B1os%20higienizados%20y%20camarines%0A%E2%80%A2%20Jornada%20de%20arriendo%3A%2010%3A00%20a%2018%3A30%20horas%0A%0AContacto%20y%20Reservas%3A%20%2B56%209%208888%206174%0ASitio%20Web%20Oficial%3A%20https%3A%2F%2Fdinogonzalez.github.io%2Fespaciomanio%2F" target="_blank" rel="noopener" class="btn btn-whatsapp btn-share-action" id="shareWhatsappActionBtn">
+          <i class="fa-brands fa-whatsapp"></i> Compartir Invitación por WhatsApp
         </a>
 
         <button type="button" class="btn btn-glass btn-share-action" id="copyShareTextBtn">
-          <i class="fa-regular fa-copy"></i> Copiar Invitación con Formato
+          <i class="fa-regular fa-copy"></i> Copiar Invitación con Formato (Texto)
         </button>
-
-        <a href="assets/images/qr_whatsapp.png" download="QR_Espacio_Manio_Oficial.png" class="btn btn-glass btn-share-action" id="downloadQrBtn">
-          <i class="fa-solid fa-download"></i> Descargar Imagen del QR
-        </a>
       </div>
 
     </div>
