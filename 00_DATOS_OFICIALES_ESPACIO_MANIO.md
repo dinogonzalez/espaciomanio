@@ -19,7 +19,7 @@ publicar ni reutilizar datos distintos sin una actualización explícita aquí.
 - **Enlace WhatsApp publicado:** `https://wa.me/56988886174`
 - **WhatsApp de respaldo operativo:** `+56 9 7253 9226`.
   No se publica en web, Instagram, Google, flyers, anuncios ni códigos QR.
-- **Sitio web oficial (GitHub Pages):** `https://dinogonzalez.github.io/Proyecto-Parcela/`
+- **Sitio web oficial (GitHub Pages):** `https://dinogonzalez.github.io/espaciomanio/`
 - **Ubicación:** Lonquén Sur, Paradero 38 1/2, Talagante, Región Metropolitana.
 
 ## Propuesta de valor aprobada

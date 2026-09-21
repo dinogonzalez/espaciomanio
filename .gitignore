@@ -8,4 +8,6 @@ desktop.ini
 # Temp & scratch files
 node_modules/
 .vscode/
-.idea/
+# Private legal & financial documents
+*.pdf
+Certificado de Contribuciones-Parcela 13.pdf

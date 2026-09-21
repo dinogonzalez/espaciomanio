@@ -7,7 +7,7 @@ Documento maestro para retomar el trabajo desde el computador de casa y ejecutar
 ## 📸 1. Resumen de Trabajo Completado y Sincronizado
 
 Todo el avance de la sesión actual ya fue depurado, estructurado y subido al repositorio central en GitHub:
-`https://github.com/dinogonzalez/Proyecto-Parcela.git` (Rama `master`).
+`https://github.com/dinogonzalez/espaciomanio.git` (Rama `master`).
 
 ### 🎨 Identidad Corporativa y Marca
 - **Logo Oficial Definitivo:** Guardado como `logo_oficial_espacio_manio.png` en la raíz e integrado en `index.html` y `README.md`.

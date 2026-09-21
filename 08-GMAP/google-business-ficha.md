@@ -12,7 +12,7 @@ Esta ficha usa exclusivamente los datos vigentes de
 - **Dirección:** Lonquén Sur, Paradero 38 1/2, Talagante, Región Metropolitana,
   Chile.
 - **WhatsApp principal publicado:** +56 9 8888 6174
-- **Sitio web:** https://dinogonzalez.github.io/Proyecto-Parcela/
+- **Sitio web:** https://dinogonzalez.github.io/espaciomanio/
 - **Instagram:** @espaciomanio
 
 ## 2. Descripción oficial para Google

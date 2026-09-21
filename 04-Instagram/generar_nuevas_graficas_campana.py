@@ -118,7 +118,7 @@ if os.path.exists(qr_path):
     canvas.paste(qr, (35, 885), qr)
     draw.text((230, 900), "Escanea con tu cámara", fill="#ffffff", font=font_title)
     draw.text((230, 946), "para chatear directo al WhatsApp oficial", fill="#94a3b8", font=font_body)
-    draw.text((230, 988), "Web: dinogonzalez.github.io/Proyecto-Parcela", fill="#38bdf8", font=font_web)
+    draw.text((230, 988), "Web: dinogonzalez.github.io/espaciomanio", fill="#38bdf8", font=font_web)
 
 # Phone & Instagram Right (x=680)
 draw.text((680, 885), "WhatsApp Oficial:", fill="#94a3b8", font=font_sub)
@@ -236,7 +236,7 @@ if os.path.exists(qr_path):
     scanvas.paste(sqr, (35, 1735), sqr)
     sdraw.text((225, 1740), "Escanea para chatear", fill="#ffffff", font=font_bold)
     sdraw.text((225, 1782), "Lonquén Sur, Par. 38 1/2 · Talagante", fill="#94a3b8", font=font_sub)
-    sdraw.text((225, 1822), "Web: dinogonzalez.github.io/Proyecto-Parcela", fill="#38bdf8", font=font_web)
+    sdraw.text((225, 1822), "Web: dinogonzalez.github.io/espaciomanio", fill="#38bdf8", font=font_web)
 
 sdraw.text((660, 1735), "WhatsApp Oficial:", fill="#94a3b8", font=font_sub)
 sdraw.text((660, 1765), "+56 9 8888 6174", fill="#25D366", font=font_phone)

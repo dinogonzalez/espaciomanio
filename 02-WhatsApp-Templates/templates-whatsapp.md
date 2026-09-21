@@ -21,7 +21,7 @@ Este documento contiene las plantillas oficiales listas para copiar y pegar en W
 > 🚻 Baños y vestidores higienizados  
 > 🚗 Estacionamiento privado cerrado para más de 30 vehículos  
 > 
-> 🌐 **Fotos, video aéreo y detalles:** https://dinogonzalez.github.io/Proyecto-Parcela/
+> 🌐 **Fotos, video aéreo y detalles:** https://dinogonzalez.github.io/espaciomanio/
 > 
 > Para darte la tarifa exacta y disponibilidad, por favor indícanos:  
 > 🗓️ **Fecha estimada de tu evento:**  
@@ -44,7 +44,7 @@ Este documento contiene las plantillas oficiales listas para copiar y pegar en W
 > 🥩 **Quincho Equipado:** Parrilla de gran tamaño lista para asados.  
 > 🚗 **Estacionamiento amplio:** Capacidad cómoda para buses o +30 autos.  
 > 
-> 🌐 **Ver video del recinto:** https://dinogonzalez.github.io/Proyecto-Parcela/
+> 🌐 **Ver video del recinto:** https://dinogonzalez.github.io/espaciomanio/
 > 
 > 💬 *Indícanos la fecha deseada y el número estimado de asistentes para enviarte la propuesta formal y valores.*
 

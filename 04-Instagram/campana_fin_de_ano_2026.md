@@ -28,7 +28,7 @@ Si estás organizando el paseo de curso de tu colegio, la fiesta de fin de año 
 📲 ¡Los fines de semana de noviembre y diciembre se agotan rápido!
 👉 Escríbenos directamente al WhatsApp +56 9 8888 6174 o toca el enlace en nuestra biografía para revisar fotos, video aéreo y cotizar tu fecha.
 
-🌐 Web oficial: https://dinogonzalez.github.io/Proyecto-Parcela/
+🌐 Web oficial: https://dinogonzalez.github.io/espaciomanio/
 
 ---
 #EspacioMañio #Talagante #ParcelaTalagante #PaseosDeFinDeAño #PaseosDeCurso #EventosEmpresa #LonquenSur #PiscinaTalagante #PaseosPrivados #EventosPrivadosChile #SantiagoChile #Peñaflor #IslaDeMaipo #Melipilla #Maipu
