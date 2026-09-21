@@ -3,351 +3,597 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Espacio Mañío: paseos y eventos privados en Lonquén Sur, Paradero 38 1/2, Talagante. Piscina de 15 x 7 metros, quincho equipado, áreas verdes, baños, vestidores y estacionamiento privado. Consulta valores y fechas por WhatsApp +56 9 8888 6174.">
-  <meta name="keywords" content="espacio mañio, parcela talagante, piscina 15x7, lonquen sur paradero 38 1/2, paseos y eventos privados, quincho talagante">
+  
+  <!-- SEO Primary Meta Tags -->
   <title>Espacio Mañío | Paseos & Eventos Privados · Talagante</title>
+  <meta name="description" content="Espacio Mañío: recinto 100% exclusivo para eventos privados, paseos de curso y jornadas de empresa en Talagante. Espectacular piscina de 15x7m, quincho equipado, áreas verdes y estacionamiento cerrado.">
+  <meta name="keywords" content="Espacio Mañío, parcela eventos talagante, arriendo parcela con piscina, paseo de fin de año colegios, paseo empresa talagante, lonquen sur paradero 38 1/2, piscina 15x7">
+  <meta name="author" content="Espacio Mañío">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dinogonzalez.github.io/espaciomanio/">
+  <meta property="og:title" content="Espacio Mañío · Paseos & Eventos Privados en Talagante">
+  <meta property="og:description" content="Piscina gigante de 15x7m, quincho equipado, áreas verdes y estacionamiento privado. ¡Exclusividad total para tu grupo en Talagante!">
+  <meta property="og:image" content="https://dinogonzalez.github.io/espaciomanio/assets/images/piscina_principal.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_CL">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://dinogonzalez.github.io/espaciomanio/">
+  <meta name="twitter:title" content="Espacio Mañío · Paseos & Eventos Privados en Talagante">
+  <meta name="twitter:description" content="Recinto 100% exclusivo: piscina de 15x7m, quincho equipado, áreas verdes y estacionamiento.">
+  <meta name="twitter:image" content="https://dinogonzalez.github.io/espaciomanio/assets/images/piscina_principal.jpeg">
+
+  <!-- PWA & Mobile Icons -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="assets/images/logo_oficial.png">
+  <link rel="apple-touch-icon" href="assets/images/logo_oficial.png">
+  <meta name="theme-color" content="#00f5ab">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Espacio Mañío">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- FontAwesome Icons CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Stylesheet -->
+
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Aviso de disponibilidad">
+    <div class="container announcement-inner">
+      <span><i class="fa-solid fa-fire" style="color: #ffb703;"></i> <strong>Temporada Primavera-Verano 2026-2027:</strong> ¡Abierta la agenda para paseos de fin de año y empresas!</span>
+      <a href="#disponibilidad" class="announcement-link">Ver Disponibilidad &rarr;</a>
+    </div>
+  </aside>
+
   <!-- Navigation Bar -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#inicio" class="nav-logo" id="navLogo">
-        <!-- High Quality Spanish Logo Image -->
-        <img src="logo_oficial_espacio_manio.png" alt="Logotipo Oficial Espacio Mañío" style="height: 58px; width: auto; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3)); border-radius: 8px;">
+      
+      <!-- Brand Logo & Identity Group -->
+      <a href="#inicio" class="nav-brand-group" id="navLogo" aria-label="Ir a inicio de Espacio Mañío">
+        <img src="assets/images/logo_oficial.png" alt="Logotipo Oficial Espacio Mañío" class="nav-brand-logo">
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">ESPACIO MAÑÍO</span>
+          <span class="nav-brand-tag">Paseos & Eventos Privados · Talagante</span>
+        </div>
       </a>
-      <ul class="nav-menu">
-        <li><a href="#inicio" class="nav-link">Inicio</a></li>
-        <li><a href="#galeria" class="nav-link">Fotos Reales</a></li>
-        <li><a href="#video-dron" class="nav-link">Video Dron</a></li>
-        <li><a href="#instalaciones" class="nav-link">Instalaciones</a></li>
-        <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
-        <li><a href="#disponibilidad" class="nav-link">Consultar Fechas</a></li>
-      </ul>
-      <div style="display: flex; gap: 10px;">
-        <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1io,%20quisiera%20consultar%20valores%20y%20fechas" target="_blank" rel="noopener" class="btn btn-whatsapp" id="navWhatsappBtn1">
-          <i class="fa-brands fa-whatsapp"></i> +56 9 8888 6174
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu-wrapper" id="navMenuWrapper">
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#video-dron" class="nav-link"><i class="fa-solid fa-play" style="font-size: 0.75rem; color: var(--accent-mint);"></i> Video Aéreo</a></li>
+          <li><a href="#galeria" class="nav-link">Fotos Reales</a></li>
+          <li><a href="#instalaciones" class="nav-link">Instalaciones</a></li>
+          <li><a href="#por-que-elegirnos" class="nav-link">Exclusividad</a></li>
+          <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons (Share + WhatsApp) -->
+      <div class="nav-actions">
+        <button class="btn-share" id="shareSiteBtn" title="Compartir este sitio web">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span class="share-btn-text">Compartir</span>
+        </button>
+
+        <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1%C3%ADo,%20quisiera%20consultar%20por%20valores%20y%20fechas%20disponibles" target="_blank" rel="noopener" class="btn btn-whatsapp" id="navWhatsappBtn">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>+56 9 8888 6174</span>
         </a>
       </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
   </header>
-  <!-- Hero Section -->
+
+  <!-- Hero Section with Maximum Corporate Presence -->
   <section class="hero" id="inicio">
+    <div class="hero-bg-overlay"></div>
     <div class="container hero-grid">
-      <!-- Hero Left: Official Info -->
+      
+      <!-- Hero Left: Corporate Brand Headline -->
       <div class="hero-content">
-        <div class="hero-badge">
-          <i class="fa-solid fa-location-dot"></i> Lonquén Sur, Paradero 38 1/2 · Talagante
+        
+        <!-- Corporate Emblem Tag -->
+        <div class="corporate-badge">
+          <img src="assets/images/logo_oficial.png" alt="Emblema Espacio Mañío" class="badge-mini-logo">
+          <span>Recinto Privado · Lonquén Sur, Paradero 38 1/2 · Talagante</span>
         </div>
+
         <h1 class="hero-title">
-          Paseos & Eventos Privados <span class="text-gradient">Espacio Mañío</span>
+          <span class="brand-eyebrow">CENTRO DE EVENTOS & PASEOS EXCLUSIVOS</span>
+          <span class="brand-main-title text-gradient">ESPACIO MAÑÍO</span>
         </h1>
+
         <p class="hero-subtitle">
-          Disfruta de nuestra <strong>Espectacular Piscina de 15x7m</strong>, quincho equipado, baños, estacionamiento privado y extensas áreas verdes para tu evento exclusivo.
+          Vive una jornada inolvidable con <strong>exclusividad 100% para tu grupo</strong>. Disfruta de nuestra <strong>Espectacular Piscina de 15x7 metros</strong> (105 m² de agua cristalina), quincho equipado para asados, baños higienizados, estacionamiento privado y extensas áreas verdes.
         </p>
-        <!-- Key features tags -->
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px;">
-          <span style="background: rgba(0, 168, 150, 0.2); border: 1px solid #00A896; color: #FFF; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
-            ðââï¸ Piscina 15x7m
-          </span>
-          <span style="background: rgba(212, 163, 115, 0.2); border: 1px solid #D4A373; color: #FFF; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
-            ð³ Ãreas Verdes
-          </span>
-          <span style="background: rgba(45, 106, 79, 0.3); border: 1px solid #2D6A4F; color: #FFF; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
-            ð¥© Quincho
-          </span>
-          <span style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255,255,255,0.2); color: #FFF; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.9rem;">
-            ð Estacionamiento Privado
-          </span>
+
+        <!-- Feature Pill Badges -->
+        <div class="hero-tags">
+          <span class="tag-pill tag-pool"><i class="fa-solid fa-water-ladder"></i> Piscina Gigante 15x7m</span>
+          <span class="tag-pill tag-exclusive"><i class="fa-solid fa-shield-halved"></i> 100% Exclusivo</span>
+          <span class="tag-pill tag-bbq"><i class="fa-solid fa-fire-burner"></i> Quincho & Parrilla</span>
+          <span class="tag-pill tag-nature"><i class="fa-solid fa-tree"></i> Áreas Verdes</span>
+          <span class="tag-pill tag-parking"><i class="fa-solid fa-square-parking"></i> +30 Estacionamientos</span>
         </div>
-        <div class="hero-buttons" style="display: flex; gap: 16px; flex-wrap: wrap;">
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-buttons">
           <a href="#disponibilidad" class="btn btn-primary" id="heroConsultarBtn">
-            <i class="fa-solid fa-calendar-check"></i> ¡CONSULTA VALORES Y FECHAS!
+            <i class="fa-solid fa-calendar-check"></i> Cotizar Fecha & Valores
           </a>
-          <a href="https://instagram.com/espaciomanio" target="_blank" rel="noopener" class="btn btn-outline" id="heroInstagramBtn">
-            <i class="fa-brands fa-instagram" style="color: #E1306C;"></i> @espaciomanio
+          <a href="#video-dron" class="btn btn-glass">
+            <i class="fa-solid fa-circle-play" style="color: var(--accent-mint);"></i> Ver Video Aéreo
+          </a>
+          <a href="https://instagram.com/espaciomanio" target="_blank" rel="noopener" class="btn btn-instagram" id="heroInstagramBtn">
+            <i class="fa-brands fa-instagram"></i> @espaciomanio
           </a>
         </div>
+
+        <!-- Quick Trust Stats -->
         <div class="hero-stats">
           <div class="stat-item">
             <span class="stat-number">15 x 7 m</span>
-            <span class="stat-label">Espectacular Piscina</span>
+            <span class="stat-label">Piscina Cristalina</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">Talagante</span>
-            <span class="stat-label">Paradero 38 1/2 Lonquén Sur</span>
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Privado para tu grupo</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">Exclusivo</span>
-            <span class="stat-label">Paseos & Eventos Privados</span>
+            <span class="stat-number">+30</span>
+            <span class="stat-label">Autos en recinto cerrado</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">10:00 - 19:30</span>
+            <span class="stat-label">Horario Extendido</span>
           </div>
         </div>
+
       </div>
-      <!-- Hero Right: Dynamic Availability & Inquiry Glass Card -->
-      <div class="glass-card" id="disponibilidad">
-        <h2 class="form-title" style="color: #25D366;">
-          <i class="fa-brands fa-whatsapp"></i> ¡Consulta Valores y Fechas!
-        </h2>
-        <p class="form-subtitle">Selecciona tus datos para consultar disponibilidad y precios directamente vía WhatsApp.</p>
-        <form id="bookingForm">
-          <div class="form-group">
-            <label for="fechaEvento" class="form-label">Fecha del Evento</label>
-            <input type="date" id="fechaEvento" class="form-input" required>
+
+      <!-- Hero Right: Interactive WhatsApp Booking Card -->
+      <div class="hero-form-wrapper">
+        <div class="glass-card quote-card" id="disponibilidad">
+          
+          <div class="quote-card-header">
+            <div class="quote-header-badge"><i class="fa-brands fa-whatsapp"></i> Atención Rápida</div>
+            <h2 class="form-title">¡Cotiza tu Evento Directo!</h2>
+            <p class="form-subtitle">Selecciona los datos de tu jornada y te responderemos disponibilidad y valores al instante por WhatsApp.</p>
           </div>
-          <div class="form-row">
+
+          <form id="bookingForm" class="quote-form">
             <div class="form-group">
-              <label for="tipoEvento" class="form-label">Tipo de Evento</label>
-              <select id="tipoEvento" class="form-select">
-                <option value="Paseo de Día">Paseo de Día</option>
-                <option value="Evento Privado">Evento Privado</option>
-                <option value="Cumpleaños">Cumpleaños</option>
-                <option value="Evento Empresa">Evento Empresa</option>
-                <option value="Reunión Familiar">Reunión Familiar</option>
-              </select>
+              <label for="fechaEvento" class="form-label"><i class="fa-regular fa-calendar"></i> Fecha Deseada</label>
+              <input type="date" id="fechaEvento" class="form-input" required>
             </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tipoEvento" class="form-label"><i class="fa-solid fa-users"></i> Tipo de Evento</label>
+                <select id="tipoEvento" class="form-select">
+                  <option value="Paseo de Fin de Año">Paseo de Fin de Año</option>
+                  <option value="Paseo de Curso / Colegio">Paseo de Curso / Colegio</option>
+                  <option value="Evento de Empresa / Integración">Evento de Empresa</option>
+                  <option value="Cumpleaños / Celebración Privada">Cumpleaños Privado</option>
+                  <option value="Paseo Familiar de Día">Paseo Familiar</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cantidadPersonas" class="form-label"><i class="fa-solid fa-user-group"></i> Asistentes</label>
+                <select id="cantidadPersonas" class="form-select">
+                  <option value="1 a 20 personas">1 a 20 personas</option>
+                  <option value="21 a 40 personas">21 a 40 personas</option>
+                  <option value="41 a 70 personas">41 a 70 personas</option>
+                  <option value="Más de 70 personas">Más de 70 personas</option>
+                </select>
+              </div>
+            </div>
+
             <div class="form-group">
-              <label for="cantidadPersonas" class="form-label">Asistentes</label>
-              <select id="cantidadPersonas" class="form-select">
-                <option value="1 a 20 personas">1 a 20 personas</option>
-                <option value="21 a 40 personas">21 a 40 personas</option>
-                <option value="41 a 70 personas">41 a 70 personas</option>
-                <option value="Más de 70 personas">Más de 70 personas</option>
-              </select>
+              <label for="nombreCliente" class="form-label"><i class="fa-regular fa-user"></i> Tu Nombre (Opcional)</label>
+              <input type="text" id="nombreCliente" class="form-input" placeholder="Ej: Marcela Gómez">
             </div>
-          </div>
-          <div class="form-group">
-            <label for="nombreCliente" class="form-label">Tu Nombre (Opcional)</label>
-            <input type="text" id="nombreCliente" class="form-input" placeholder="Ej: Marcela Gómez">
-          </div>
-          <div class="form-group">
-            <label for="notasCliente" class="form-label">Comentarios o Preguntas</label>
-            <textarea id="notasCliente" class="form-input" rows="2" placeholder="¿Tienes alguna consulta en particular?"></textarea>
-          </div>
-          <button type="submit" class="btn btn-whatsapp" style="width: 100%; font-size: 1.1rem; padding: 16px;" id="submitBookingBtn">
-            <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
-          </button>
-        </form>
+
+            <div class="form-group">
+              <label for="notasCliente" class="form-label"><i class="fa-regular fa-comment-dots"></i> Consultas o Requerimientos</label>
+              <textarea id="notasCliente" class="form-input" rows="2" placeholder="¿Deseas quincho para asado, uso de piscina, horario especial?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp btn-quote-submit" id="submitBookingBtn">
+              <i class="fa-brands fa-whatsapp"></i> Consultar Disponibilidad por WhatsApp
+            </button>
+            
+            <p class="form-security-note">
+              <i class="fa-solid fa-lock"></i> Sin intermediarios ni comisiones. Trato directo con los administradores.
+            </p>
+          </form>
+
+        </div>
       </div>
+
     </div>
   </section>
-  <!-- Real Photos Gallery Section -->
-  <section class="section" id="galeria" style="background: rgba(5, 12, 9, 0.7); border-top: 1px solid var(--border-glass);">
+
+  <!-- Drone Video Cinema Showcase Section -->
+  <section class="section video-section" id="video-dron">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Galería Fotográfica Real</span>
-        <h2 class="section-title">Nuestras Instalaciones en Talagante</h2>
-        <p class="section-description">Fotografías reales del recinto Espacio Mañío. Haz clic en cualquiera para ampliar.</p>
+      
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-video"></i> Vista Aérea Exclusiva</span>
+        <h2 class="section-title">Conoce <span class="text-gradient">Espacio Mañío</span> desde el Aire</h2>
+        <p class="section-description">
+          Recorrido aéreo en alta definición con dron que muestra la piscina de 15x7 metros, solárium de madera, quincho y el entorno natural de descanso en Talagante.
+        </p>
       </div>
-      <div class="gallery-grid">
-        <!-- Real Photo 1: Swimming Pool -->
-        <div class="gallery-item" id="galeriaFoto1">
-          <img src="Fotos Parcela/Fotos/foto_parcela_15.jpeg" alt="Piscina de 15 por 7 metros de Espacio Mañío">
-          <div class="gallery-overlay">
-            <h3 class="gallery-title">Piscina 15x7m & Deck</h3>
-            <span class="gallery-subtitle">Agua cristalina y reposeras de madera</span>
+
+      <!-- Cinematic Video Player Wrapper -->
+      <div class="video-cinema-card">
+        <div class="video-player-container">
+          <video id="droneVideo" class="cinema-video" playsinline muted autoplay loop preload="auto" poster="assets/images/piscina_principal.jpeg">
+            <source src="assets/video/video_dron_piscina.mp4" type="video/mp4">
+            <source src="Fotos%20Dron/Videos/video_dron_vista_piscina_02.mp4" type="video/mp4">
+            Tu navegador no soporta reproducción de video HTML5.
+          </video>
+
+          <!-- Floating Overlay Controls -->
+          <div class="video-overlay-bar">
+            <button class="video-btn" id="videoPlayPauseBtn" title="Reproducir / Pausar">
+              <i class="fa-solid fa-pause"></i> <span>Pausar</span>
+            </button>
+            <button class="video-btn" id="videoSoundBtn" title="Activar o silenciar audio">
+              <i class="fa-solid fa-volume-xmark"></i> <span>Activar Sonido</span>
+            </button>
+            <button class="video-btn" id="videoFullscreenBtn" title="Ver en pantalla completa">
+              <i class="fa-solid fa-expand"></i> <span>Pantalla Completa</span>
+            </button>
           </div>
         </div>
-        <!-- Real Photo 2: Hammock & Shade Tree -->
-        <div class="gallery-item" id="galeriaFoto2">
-          <img src="Fotos Parcela/Fotos/foto_parcela_01.jpeg" alt="Ãreas verdes y árboles de sombra en Espacio Mañío">
-          <div class="gallery-overlay">
-            <h3 class="gallery-title">Zona de Sombra & Hamaca</h3>
-            <span class="gallery-subtitle">Mesa de picnic bajo la sombra de arbolado nativo</span>
+
+        <!-- Video Bottom Callout -->
+        <div class="video-bottom-info">
+          <div class="video-info-text">
+            <h4><i class="fa-solid fa-water"></i> Piscina de 15 x 7 metros (105 m² de espejo de agua)</h4>
+            <p>Agua cristalina, solárium de descanso y entorno cerrado con total privacidad para tu grupo.</p>
           </div>
-        </div>
-        <!-- Real Photo 3: Lawn & Gardens -->
-        <div class="gallery-item" id="galeriaFoto3">
-          <img src="Fotos Parcela/Fotos/foto_parcela_18.jpeg" alt="Amplias áreas verdes de Espacio Mañío">
-          <div class="gallery-overlay">
-            <h3 class="gallery-title">Amplias Ãreas Verdes</h3>
-            <span class="gallery-subtitle">Espacio para descanso, juegos y celebraciones</span>
-          </div>
-        </div>
-        <!-- Real Photo 4: Pool Top View -->
-        <div class="gallery-item" id="galeriaFoto4">
-          <img src="Fotos Parcela/Fotos/foto_parcela_21.jpeg" alt="Otra vista de la piscina de Espacio Mañío">
-          <div class="gallery-overlay">
-            <h3 class="gallery-title">Vista de la Piscina</h3>
-            <span class="gallery-subtitle">Amplias dimensiones de 15 por 7 metros</span>
-          </div>
-        </div>
-        <!-- Real Photo 5: Quincho & Pergola -->
-        <div class="gallery-item" id="galeriaFoto5">
-          <img src="Fotos Parcela/Fotos/foto_parcela_27.jpeg" alt="Quincho equipado de Espacio Mañío">
-          <div class="gallery-overlay">
-            <h3 class="gallery-title">Quincho & Estructura Techada</h3>
-            <span class="gallery-subtitle">Ãrea sombreada para asados y almuerzos</span>
-          </div>
-        </div>
-        <!-- Real Photo 6: Extenso Césped -->
-        <div class="gallery-item" id="galeriaFoto6">
-          <img src="Fotos Parcela/Fotos/foto_parcela_28.jpeg" alt="Espacios exteriores de Espacio Mañío">
-          <div class="gallery-overlay">
-            <h3 class="gallery-title">Entorno Natural para Eventos</h3>
-            <span class="gallery-subtitle">Recinto privado para disfrutar con tu grupo</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Drone Video Showcase Section -->
-  <section class="section" id="video-dron" style="background: rgba(3, 10, 22, 0.95); border-top: 1px solid var(--border-glass);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag"><i class="fa-solid fa-drone"></i> Vista Aérea Exclusiva</span>
-        <h2 class="section-title">Conoce Espacio Mañío desde el Aire</h2>
-        <p class="section-description">Recorrido con dron mostrando la espectacular piscina de 15x7 metros, quincho equipado y el entorno natural de descanso.</p>
-      </div>
-      <div style="max-width: 860px; margin: 0 auto; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0, 168, 150, 0.3); border: 2px solid rgba(0, 168, 150, 0.4); background: #000;">
-        <video controls playsinline preload="metadata" poster="Fotos Parcela/Fotos/foto_parcela_15.jpeg" style="width: 100%; height: auto; display: block;">
-          <source src="Fotos Dron/Videos/video_dron_vista_piscina_02.mp4" type="video/mp4">
-          <source src="Fotos%20Dron/Videos/video_dron_vista_piscina_02.mp4" type="video/mp4">
-          Tu navegador no soporta reproducción de video HTML5.
-        </video>
-      </div>
-      <div style="text-align: center; margin-top: 24px;">
-        <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1io,%20vi%20el%20video%20a%C3%A9reo%20y%20quisiera%20consultar%20valores%20y%20disponibilidad" target="_blank" rel="noopener" class="btn btn-whatsapp" style="display: inline-flex; align-items: center; gap: 8px;">
-          <i class="fa-brands fa-whatsapp"></i> ¡Consultar Fechas para mi Evento!
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- Features & Amenities Section -->
-  <section class="section" id="instalaciones">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Instalaciones Destacadas</span>
-        <h2 class="section-title">Equipamiento Completo para tu Evento</h2>
-        <p class="section-description">Todo lo que necesitas para disfrutar un día inolvidable con familia, amigos o empresa.</p>
-      </div>
-      <div class="features-grid">
-        <!-- Feature 1: Piscina 15x7m -->
-        <div class="feature-card" id="featurePiscina">
-          <div class="feature-icon">
-            <i class="fa-solid fa-water-ladder"></i>
-          </div>
-          <h3 class="feature-card-title">Espectacular Piscina 15x7m</h3>
-          <p class="feature-card-desc">Gran piscina de 15 metros de largo por 7 metros de ancho con agua totalmente cristalina y espacio solárium.</p>
-        </div>
-        <!-- Feature 2: Ãreas Verdes -->
-        <div class="feature-card" id="featureAreasVerdes">
-          <div class="feature-icon">
-            <i class="fa-solid fa-tree"></i>
-          </div>
-          <h3 class="feature-card-title">Amplias Ãreas Verdes</h3>
-          <p class="feature-card-desc">Extensos sectores de césped y vegetación nativa para descanso, actividades y juegos al aire libre.</p>
-        </div>
-        <!-- Feature 3: Quincho -->
-        <div class="feature-card" id="featureQuincho">
-          <div class="feature-icon">
-            <i class="fa-solid fa-fire-burner"></i>
-          </div>
-          <h3 class="feature-card-title">Quincho Equipado</h3>
-          <p class="feature-card-desc">Espacio techado con gran parrilla para asados, mesas y sombra para disfrutar tus almuerzos.</p>
-        </div>
-        <!-- Feature 4: Baños -->
-        <div class="feature-card" id="featureBanos">
-          <div class="feature-icon">
-            <i class="fa-solid fa-restroom"></i>
-          </div>
-          <h3 class="feature-card-title">Baños e Instalaciones</h3>
-          <p class="feature-card-desc">Servicios sanitarios impecables y cómodos para damas y varones durante todo tu evento.</p>
-        </div>
-        <!-- Feature 5: Estacionamiento Privado -->
-        <div class="feature-card" id="featureEstacionamiento">
-          <div class="feature-icon">
-            <i class="fa-solid fa-square-parking"></i>
-          </div>
-          <h3 class="feature-card-title">Gran Estacionamiento</h3>
-          <p class="feature-card-desc">Amplio espacio cerrado y seguro para estacionar múltiples vehículos sin preocupaciones.</p>
-        </div>
-        <!-- Feature 6: Eventos Privados -->
-        <div class="feature-card" id="featurePrivacidad">
-          <div class="feature-icon">
-            <i class="fa-solid fa-shield-halved"></i>
-          </div>
-          <h3 class="feature-card-title">100% Eventos Privados</h3>
-          <p class="feature-card-desc">Arriendo exclusivo para tu grupo. Sin compartir las instalaciones con otros eventos simultáneos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Location Section -->
-  <section class="section" id="ubicacion">
-    <div class="container">
-      <div class="location-card">
-        <div class="location-info">
-          <span class="section-tag">Ubicación y Contacto</span>
-          <h3>¿Cómo llegar a Espacio Mañío?</h3>
-          <p class="section-description" style="margin-bottom: 24px;">Ubicación privilegiada con excelente conectividad en la comuna de Talagante.</p>
-          <div class="location-detail-item">
-            <i class="fa-solid fa-location-dot" style="color: #2D6A4F;"></i>
-            <div>
-              <strong>Dirección Oficial</strong>
-              <p style="color: var(--text-muted);">Lonquén Sur, Paradero 38 1/2 · Talagante, Región Metropolitana.</p>
-            </div>
-          </div>
-          <div class="location-detail-item">
-            <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i>
-            <div>
-              <strong>WhatsApp Directo</strong>
-              <p style="color: var(--text-muted);">+56 9 8888 6174</p>
-            </div>
-          </div>
-          <div class="location-detail-item">
-            <i class="fa-brands fa-instagram" style="color: #E1306C;"></i>
-            <div>
-              <strong>Instagram Oficial</strong>
-              <p style="color: var(--text-muted);">@espaciomanio</p>
-            </div>
-          </div>
-          <a href="https://wa.me/56988886174?text=Hola,%20quisiera%20solicitar%20la%20ubicaci%C3%B3n%20en%20Google%20Maps%20de%20Espacio%20Ma%C3%B1io" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 12px;">
-            <i class="fa-solid fa-map-location-dot"></i> Solicitar Ubicación en Maps
+          <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1%C3%ADo,%20vi%20el%20video%20a%C3%A9reo%20y%20quisiera%20consultar%20valores%20y%20fechas" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> ¡Reservar esta Piscina!
           </a>
         </div>
-        <div class="glass-card" style="text-align: center; padding: 48px 24px;">
-          <i class="fa-solid fa-calendar-star" style="font-size: 4rem; color: var(--accent-wood); margin-bottom: 20px;"></i>
-          <h4 style="font-size: 1.6rem; margin-bottom: 12px; font-weight: 800;">¡CONSULTA VALORES Y FECHAS!</h4>
-          <p style="color: var(--text-muted); margin-bottom: 24px;">Habla directamente con nosotros por WhatsApp para reservar la fecha de tu paseo o evento.</p>
-          <div style="display: flex; flex-direction: column; gap: 12px;">
-            <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1io,%20quisiera%20consultar%20valores%20y%20fechas" target="_blank" rel="noopener" class="btn btn-whatsapp" style="font-size: 1.05rem;">
-              <i class="fa-brands fa-whatsapp"></i> WhatsApp +56 9 8888 6174
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Real Photos Gallery Section -->
+  <section class="section gallery-section" id="galeria">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-camera"></i> Galería Fotográfica Real</span>
+        <h2 class="section-title">Instalaciones de <span class="text-gradient">Espacio Mañío</span></h2>
+        <p class="section-description">
+          Fotografías 100% reales de nuestro recinto en Talagante. Haz clic en cualquiera para ampliar en pantalla completa.
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        
+        <!-- Photo 1: Main Pool -->
+        <div class="gallery-item" data-img="assets/images/piscina_principal.jpeg" data-caption="Espectacular Piscina de 15x7 metros con solárium y reposeras de madera">
+          <img src="assets/images/piscina_principal.jpeg" alt="Piscina de 15 por 7 metros de Espacio Mañío" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-badge"><i class="fa-solid fa-water-ladder"></i> Piscina 15x7m</span>
+            <h3 class="gallery-title">Piscina Gigante & Solárium</h3>
+            <span class="gallery-subtitle">105 m² de agua cristalina para tu grupo</span>
+          </div>
+        </div>
+
+        <!-- Photo 2: Hammock & Shade Trees -->
+        <div class="gallery-item" data-img="assets/images/hamaca_arboles.jpeg" data-caption="Área de descanso con hamacas y sombra bajo arbolado nativo">
+          <img src="assets/images/hamaca_arboles.jpeg" alt="Áreas verdes y árboles de sombra en Espacio Mañío" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-badge"><i class="fa-solid fa-tree"></i> Descanso</span>
+            <h3 class="gallery-title">Hamacas & Sombra Natural</h3>
+            <span class="gallery-subtitle">Mesa de picnic y descanso bajo árboles nativos</span>
+          </div>
+        </div>
+
+        <!-- Photo 3: Lawn & Green Areas -->
+        <div class="gallery-item" data-img="assets/images/areas_verdes.jpeg" data-caption="Extensas áreas verdes y cancha de césped para dinámicas y juegos">
+          <img src="assets/images/areas_verdes.jpeg" alt="Amplias áreas verdes de Espacio Mañío" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-badge"><i class="fa-solid fa-seedling"></i> Áreas Verdes</span>
+            <h3 class="gallery-title">Amplio Césped Natural</h3>
+            <span class="gallery-subtitle">Espacio para actividades, juegos y eventos masivos</span>
+          </div>
+        </div>
+
+        <!-- Photo 4: Pool High Angle -->
+        <div class="gallery-item" data-img="assets/images/piscina_vista_alta.jpeg" data-caption="Vista cenital de la piscina de 15x7 metros">
+          <img src="assets/images/piscina_vista_alta.jpeg" alt="Vista en ángulo de la piscina en Talagante" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-badge"><i class="fa-solid fa-eye"></i> Vista Panorámica</span>
+            <h3 class="gallery-title">Dimensiones Reales</h3>
+            <span class="gallery-subtitle">Cerco perimetral de seguridad para niños</span>
+          </div>
+        </div>
+
+        <!-- Photo 5: Quincho & Grill -->
+        <div class="gallery-item" data-img="assets/images/quincho_parrilla.jpeg" data-caption="Quincho techado con gran parrilla para asados y mesones">
+          <img src="assets/images/quincho_parrilla.jpeg" alt="Quincho equipado para asados en Espacio Mañío" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-badge"><i class="fa-solid fa-fire-burner"></i> Quincho</span>
+            <h3 class="gallery-title">Parrilla & Quincho Techado</h3>
+            <span class="gallery-subtitle">Área sombreada para asados y almuerzos grupales</span>
+          </div>
+        </div>
+
+        <!-- Photo 6: Natural Environment -->
+        <div class="gallery-item" data-img="assets/images/entorno_natural.jpeg" data-caption="Entorno rural y privacidad en Lonquén Sur, Talagante">
+          <img src="assets/images/entorno_natural.jpeg" alt="Entorno natural de descanso en Espacio Mañío" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-badge"><i class="fa-solid fa-mountain-sun"></i> Naturaleza</span>
+            <h3 class="gallery-title">Desconexión Total</h3>
+            <span class="gallery-subtitle">Tranquilidad rural a minutos de Santiago</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us / Exclusivity Section -->
+  <section class="section exclusivity-section" id="por-que-elegirnos">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-award"></i> Ventaja Diferencial</span>
+        <h2 class="section-title">¿Por qué elegir <span class="text-gradient">Espacio Mañío</span>?</h2>
+        <p class="section-description">
+          A diferencia de los balnearios o campings públicos, nosotros te ofrecemos privacidad total y un estándar superior de atención.
+        </p>
+      </div>
+
+      <div class="comparison-grid">
+        
+        <!-- Card 1 -->
+        <div class="comparison-card feature-highlight">
+          <div class="comparison-icon"><i class="fa-solid fa-lock"></i></div>
+          <h3>100% Exclusividad Privada</h3>
+          <p>El recinto completo se reserva únicamente para tu grupo. Sin personas desconocidas, sin ruidos molestos de terceros y con la tranquilidad que tu familia o empresa merece.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="comparison-card feature-highlight">
+          <div class="comparison-icon"><i class="fa-solid fa-water"></i></div>
+          <h3>Piscina Real de 15x7m</h3>
+          <p>No es una piscina pequeña de patio: son 105 m² de espejo de agua cristalina, con solárium de madera, reposeras y cerco de seguridad perimetral.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="comparison-card feature-highlight">
+          <div class="comparison-icon"><i class="fa-solid fa-square-parking"></i></div>
+          <h3>Estacionamiento Cerrado (+30 Autos)</h3>
+          <p>Tus invitados estacionan sus vehículos dentro del recinto cerrado, de forma cómoda, segura y a pasos de las instalaciones y piscina.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="comparison-card feature-highlight">
+          <div class="comparison-icon"><i class="fa-solid fa-route"></i></div>
+          <h3>Excelente Conectividad</h3>
+          <p>Ubicados en Lonquén Sur, Paradero 38 1/2 en Talagante. Acceso directo y expedito desde Santiago por Autopista del Sol o Camino a Lonquén.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features & Amenities Grid Section -->
+  <section class="section amenities-section" id="instalaciones">
+    <div class="container">
+      
+      <div class="section-header text-center">
+        <span class="section-tag"><i class="fa-solid fa-list-check"></i> Equipamiento Completo</span>
+        <h2 class="section-title">Todo lo que Incluye tu Jornada</h2>
+        <p class="section-description">
+          Infraestructura lista para que solo te preocupes de disfrutar junto a tus invitados.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-water-ladder"></i></div>
+          <h3 class="feature-card-title">Piscina 15 x 7 m</h3>
+          <p class="feature-card-desc">105 metros cuadrados de agua cristalina, con mantención profesional continua y solárium con reposeras.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-fire-burner"></i></div>
+          <h3 class="feature-card-title">Quincho & Gran Parrilla</h3>
+          <p class="feature-card-desc">Área techada equipada con parrilla de gran capacidad para asados masivos, mesones y espacio de preparación.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-tree"></i></div>
+          <h3 class="feature-card-title">Extensas Áreas Verdes</h3>
+          <p class="feature-card-desc">Amplios sectores de césped y sombra de arbolado nativo para juegos al aire libre, actividades de integración y descanso.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-restroom"></i></div>
+          <h3 class="feature-card-title">Baños e Instalaciones</h3>
+          <p class="feature-card-desc">Servicios sanitarios higienizados y vestidores cómodos tanto para damas como para varones.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3 class="feature-card-title">Jornada Extendida</h3>
+          <p class="feature-card-desc">Horario completo de 10:00 a 19:30 hrs para aprovechar al máximo el sol, el almuerzo y la tarde de piscina.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-file-contract"></i></div>
+          <h3 class="feature-card-title">Reserva Formal con Contrato</h3>
+          <p class="feature-card-desc">Transparencia y seriedad: reserva con 50% de seña y emisión de contrato formal de arriendo para tu tranquilidad.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section class="section location-section" id="ubicacion">
+    <div class="container">
+      
+      <div class="location-card">
+        
+        <div class="location-info">
+          <span class="section-tag"><i class="fa-solid fa-map-pin"></i> Ubicación Privilegiada</span>
+          <h3 class="location-heading">¿Cómo llegar a Espacio Mañío?</h3>
+          <p class="location-desc">
+            Estamos ubicados en el corazón rural de la provincia de Talagante, a menos de 40 minutos del centro de Santiago.
+          </p>
+
+          <div class="location-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Dirección Oficial</strong>
+              <p>Lonquén Sur, Paradero 38 1/2 · Comuna de Talagante, Región Metropolitana.</p>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp Comercial Directo</strong>
+              <p>+56 9 8888 6174</p>
+            </div>
+          </div>
+
+          <div class="location-item">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <strong>Instagram Oficial</strong>
+              <p>@espaciomanio</p>
+            </div>
+          </div>
+
+          <div class="location-buttons">
+            <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1%C3%ADo,%20quisiera%20solicitar%20la%20ubicaci%C3%B3n%20exacta%20en%20Google%20Maps%20y%20Waze" target="_blank" rel="noopener" class="btn btn-primary">
+              <i class="fa-solid fa-map-location-dot"></i> Solicitar Ubicación en Maps / Waze
             </a>
           </div>
         </div>
+
+        <!-- Corporate Brand Seal Card -->
+        <div class="brand-seal-card">
+          <img src="assets/images/logo_oficial.png" alt="Sello Oficial Espacio Mañío" class="seal-logo">
+          <h4 class="seal-title">ESPACIO MAÑÍO</h4>
+          <span class="seal-subtitle">Paseos & Eventos Privados · Talagante</span>
+          <p class="seal-text">Garantía de exclusividad, piscina cristalina y un entorno campestre inigualable para tu grupo.</p>
+          
+          <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1%C3%ADo,%20quisiera%20consultar%20valores%20y%20fechas" target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+            <i class="fa-brands fa-whatsapp"></i> Chatear al WhatsApp Oficial
+          </a>
+        </div>
+
       </div>
+
     </div>
   </section>
-  <!-- Footer -->
+
+  <!-- Modern Footer with Corporate Presence -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-logo">
-        <img src="logo_oficial_espacio_manio.png" alt="Logotipo oficial de Espacio Mañío" style="height: 58px; border-radius: 6px;">
+    <div class="container footer-content">
+      
+      <div class="footer-brand">
+        <img src="assets/images/logo_oficial.png" alt="Logotipo Oficial Espacio Mañío" class="footer-logo">
+        <div class="footer-brand-title">ESPACIO MAÑÍO</div>
+        <p class="footer-brand-tag">Paseos & Eventos Privados · Lonquén Sur, Paradero 38 1/2 · Talagante</p>
       </div>
-      <p style="font-weight: 600; color: var(--accent-aqua); margin-bottom: 8px;">Paseos & Eventos Privados · Lonquén Sur, Paradero 38 1/2 · Talagante</p>
-      <p>© 2026 Espacio Mañío. Todos los derechos reservados. Instagram: @espaciomanio</p>
+
+      <div class="footer-links-group">
+        <a href="#inicio">Inicio</a>
+        <a href="#video-dron">Video Dron</a>
+        <a href="#galeria">Fotos Reales</a>
+        <a href="#instalaciones">Instalaciones</a>
+        <a href="#disponibilidad">Cotizar Fecha</a>
+        <a href="https://instagram.com/espaciomanio" target="_blank" rel="noopener">Instagram @espaciomanio</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>Espacio Mañío</strong>. Todos los derechos reservados. Talagante, Región Metropolitana, Chile.</p>
+        <p class="footer-url">Sitio Oficial: <a href="https://dinogonzalez.github.io/espaciomanio/">dinogonzalez.github.io/espaciomanio</a></p>
+      </div>
+
     </div>
   </footer>
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1io,%20quisiera%20consultar%20valores%20y%20fechas" class="whatsapp-float" target="_blank" rel="noopener" title="Contactar por WhatsApp">
+
+  <!-- Sticky Bottom Bar for Mobile Devices -->
+  <aside class="mobile-sticky-bar" id="mobileStickyBar" aria-label="Acciones rápidas para móvil">
+    <button class="mobile-bar-btn btn-mobile-share" id="mobileShareBtn">
+      <i class="fa-solid fa-share-nodes"></i>
+      <span>Compartir</span>
+    </button>
+    <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1%C3%ADo,%20quisiera%20consultar%20por%20valores%20y%20fechas%20para%20mi%20evento" target="_blank" rel="noopener" class="mobile-bar-btn btn-mobile-whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Cotizar por WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- Floating Desktop WhatsApp Button -->
+  <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1%C3%ADo,%20quisiera%20consultar%20valores%20y%20fechas" class="whatsapp-float" target="_blank" rel="noopener" title="Contactar por WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float-tooltip">¿Consultas? Escríbenos</span>
   </a>
-  <!-- Image Zoom Modal -->
-  <div class="modal" id="imageModal">
-    <button class="modal-close" id="modalClose">&times;</button>
+
+  <!-- Image Lightbox Modal -->
+  <div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar vista previa">&times;</button>
     <div class="modal-content">
-      <img id="modalImage" src="" alt="Vista ampliada" style="width: 100%; height: auto; max-height: 80vh; object-fit: contain;">
-      <div id="modalCaption" style="padding: 16px; text-align: center; color: var(--text-main); font-family: var(--font-heading);"></div>
+      <img id="modalImage" src="" alt="Vista ampliada" class="modal-img">
+      <div id="modalCaption" class="modal-caption"></div>
+      <div class="modal-actions">
+        <a href="https://wa.me/56988886174?text=Hola%20Espacio%20Ma%C3%B1%C3%ADo,%20me%20interesa%20esta%20instalaci%C3%B3n%20para%20mi%20evento" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Consultar por esta instalación
+        </a>
+      </div>
     </div>
   </div>
-  <!-- JavaScript -->
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toastNotification">Enlace copiado al portapapeles</div>
+
+  <!-- JavaScript Application Logic -->
   <script src="app.js"></script>
 </body>
 </html>

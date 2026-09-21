@@ -1,0 +1,24 @@
+{
+  "name": "Espacio Mañío — Paseos & Eventos Privados",
+  "short_name": "Espacio Mañío",
+  "description": "Recinto exclusivo para eventos familiares, empresas y paseos de fin de año en Talagante. Piscina de 15x7m, quincho equipado y extensas áreas verdes.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#06140e",
+  "theme_color": "#00f5ab",
+  "icons": [
+    {
+      "src": "assets/images/logo_oficial.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo_oficial_espacio_manio.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
