@@ -152,42 +152,46 @@ body {
 .nav-brand-group {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   text-decoration: none;
 }
 
 .nav-brand-logo {
-  height: 64px;
+  height: 76px;
   width: auto;
-  border-radius: 12px;
-  filter: drop-shadow(0 4px 12px rgba(0, 245, 171, 0.25));
+  border-radius: 14px;
+  filter: drop-shadow(0 4px 14px rgba(0, 245, 171, 0.35));
   transition: var(--transition);
+  display: block;
 }
 
 .nav-brand-group:hover .nav-brand-logo {
-  transform: scale(1.05);
-  filter: drop-shadow(0 6px 18px rgba(0, 245, 171, 0.5));
+  transform: scale(1.06) rotate(-1deg);
+  filter: drop-shadow(0 8px 24px rgba(0, 245, 171, 0.6));
 }
 
 .nav-brand-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .nav-brand-name {
   font-family: var(--font-heading);
-  font-size: 1.45rem;
+  font-size: 1.6rem;
   font-weight: 900;
-  letter-spacing: 1px;
-  background: linear-gradient(135deg, #ffffff 30%, var(--brand-mint) 100%);
+  letter-spacing: 1.2px;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 20%, var(--brand-mint) 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .nav-brand-tag {
-  font-size: 0.76rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
   font-weight: 500;
+  margin-top: 2px;
 }
 
 /* Navigation Links */
@@ -199,7 +203,7 @@ body {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 24px;
+  gap: 22px;
   align-items: center;
 }
 
@@ -238,6 +242,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .btn-share {
@@ -253,13 +258,21 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: var(--transition);
+  white-space: nowrap !important;
+  flex-shrink: 0;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-share:hover {
-  background: rgba(0, 245, 171, 0.15);
+  background: rgba(0, 245, 171, 0.2);
   border-color: var(--brand-mint);
   color: var(--brand-mint);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 245, 171, 0.35);
+}
+
+.btn-share:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 .btn {
@@ -274,54 +287,88 @@ body {
   font-size: 0.95rem;
   text-decoration: none;
   cursor: pointer;
-  transition: var(--transition);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   border: none;
+  white-space: nowrap !important;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-whatsapp {
   background: var(--whatsapp);
   color: #03140a;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  white-space: nowrap !important;
+  flex-shrink: 0;
+}
+
+.btn-whatsapp span {
+  white-space: nowrap !important;
 }
 
 .btn-whatsapp:hover {
   background: #1eb956;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
   color: #03140a;
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.65), 0 0 20px rgba(37, 211, 102, 0.35);
+  filter: brightness(1.08);
+}
+
+.btn-whatsapp:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--brand-mint) 0%, #00b4d8 100%);
   color: #03140a;
-  box-shadow: 0 6px 25px rgba(0, 245, 171, 0.35);
+  box-shadow: 0 6px 25px rgba(0, 245, 171, 0.4);
+  white-space: nowrap !important;
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 245, 171, 0.55);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 245, 171, 0.65), 0 0 25px rgba(0, 229, 255, 0.4);
+  filter: brightness(1.1);
+  color: #03140a;
+}
+
+.btn-primary:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 .btn-glass {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid var(--border-neon);
   color: #ffffff;
+  white-space: nowrap !important;
 }
 
 .btn-glass:hover {
-  background: rgba(0, 245, 171, 0.15);
+  background: rgba(0, 245, 171, 0.2);
   border-color: var(--brand-mint);
-  transform: translateY(-2px);
+  color: #ffffff;
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 245, 171, 0.4);
+}
+
+.btn-glass:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 .btn-instagram {
   background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
   color: #ffffff;
+  white-space: nowrap !important;
 }
 
 .btn-instagram:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(225, 48, 108, 0.45);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(225, 48, 108, 0.6);
+  filter: brightness(1.1);
+}
+
+.btn-instagram:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 /* Mobile Hamburger */
@@ -426,6 +473,13 @@ body {
   border-radius: var(--radius-full);
   font-size: 0.88rem;
   font-weight: 700;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+.tag-pill:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }
 
 .tag-pool {
@@ -687,26 +741,33 @@ body {
 }
 
 .video-btn {
-  background: rgba(4, 16, 11, 0.82);
+  background: rgba(4, 16, 11, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(0, 245, 171, 0.4);
+  border: 1px solid rgba(0, 245, 171, 0.5);
   color: #ffffff;
-  padding: 8px 16px;
+  padding: 9px 18px;
   border-radius: var(--radius-full);
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.86rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: var(--transition);
+  white-space: nowrap !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .video-btn:hover {
   background: var(--brand-mint);
   color: #03140a;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 245, 171, 0.55);
+}
+
+.video-btn:active {
+  transform: translateY(-1px) scale(0.98);
 }
 
 .video-bottom-info {
@@ -1287,25 +1348,30 @@ body {
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
-@media (max-width: 1024px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 1180px) {
+  .nav-menu {
+    gap: 14px;
   }
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .nav-link {
+    font-size: 0.88rem;
   }
-  .comparison-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .nav-brand-logo {
+    height: 68px;
   }
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .nav-brand-name {
+    font-size: 1.4rem;
   }
-  .location-card {
-    grid-template-columns: 1fr;
+  .btn-share {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+  .btn-whatsapp {
+    padding: 10px 18px;
+    font-size: 0.88rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .nav-menu-wrapper {
     display: none;
   }
@@ -1328,6 +1394,27 @@ body {
   .hamburger-btn {
     display: flex;
   }
+  .nav-brand-logo {
+    height: 60px;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .comparison-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .location-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
   .nav-actions .btn-whatsapp span {
     display: none;
   }

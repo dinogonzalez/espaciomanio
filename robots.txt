@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dinogonzalez.github.io/espaciomanio/sitemap.xml
