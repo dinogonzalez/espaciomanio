@@ -95,7 +95,7 @@
   <aside class="announcement-bar" aria-label="Aviso de disponibilidad">
     <div class="container announcement-inner">
       <span><i class="fa-solid fa-fire" style="color: #ffb703;"></i> <strong>Temporada Primavera-Verano 2026-2027:</strong> ¡Abierta la agenda para paseos de fin de año y empresas!</span>
-      <a href="#disponibilidad" class="announcement-link">Ver Disponibilidad &rarr;</a>
+      <a href="#disponibilidad" class="announcement-link open-quote-modal" id="announcementQuoteBtn">Ver Disponibilidad &rarr;</a>
     </div>
   </aside>
 
@@ -181,7 +181,7 @@
 
         <!-- Call to Action Buttons -->
         <div class="hero-buttons">
-          <a href="#disponibilidad" class="btn btn-primary" id="heroConsultarBtn">
+          <a href="#disponibilidad" class="btn btn-primary open-quote-modal" id="heroConsultarBtn">
             <i class="fa-solid fa-calendar-check"></i> Cotizar Fecha & Valores
           </a>
           <a href="#video-dron" class="btn btn-glass">
@@ -587,7 +587,7 @@
         <a href="#video-dron">Video Dron</a>
         <a href="#galeria">Fotos Reales</a>
         <a href="#instalaciones">Instalaciones</a>
-        <a href="#disponibilidad">Cotizar Fecha</a>
+        <a href="#disponibilidad" class="open-quote-modal">Cotizar Fecha</a>
         <a href="https://instagram.com/espaciomanio" target="_blank" rel="noopener">Instagram @espaciomanio</a>
       </div>
 
@@ -628,6 +628,68 @@
           <i class="fa-brands fa-whatsapp"></i> Consultar por esta instalación
         </a>
       </div>
+    </div>
+  </div>
+
+  <!-- Interactive Quote Modal (Desplegable) -->
+  <div class="modal" id="quoteModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content quote-modal-content">
+      <button class="modal-close" id="quoteModalClose" aria-label="Cerrar cotizador">&times;</button>
+      
+      <div class="quote-modal-header">
+        <div class="quote-header-badge"><i class="fa-brands fa-whatsapp"></i> Cotización Inmediata</div>
+        <h3 class="quote-modal-title">¡Cotiza tu Evento en <span class="text-gradient">Espacio Mañío</span>!</h3>
+        <p class="quote-modal-subtitle">Indícanos los datos de tu jornada y te responderemos disponibilidad y valores oficiales al instante por WhatsApp.</p>
+      </div>
+
+      <form id="modalBookingForm" class="quote-form">
+        <div class="form-group">
+          <label for="modalFechaEvento" class="form-label"><i class="fa-regular fa-calendar"></i> Fecha Deseada *</label>
+          <input type="date" id="modalFechaEvento" class="form-input" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modalTipoEvento" class="form-label"><i class="fa-solid fa-users"></i> Tipo de Evento</label>
+            <select id="modalTipoEvento" class="form-select">
+              <option value="Paseo de Fin de Año">Paseo de Fin de Año</option>
+              <option value="Paseo de Curso / Colegio">Paseo de Curso / Colegio</option>
+              <option value="Evento de Empresa / Integración">Evento de Empresa</option>
+              <option value="Cumpleaños / Celebración Privada">Cumpleaños Privado</option>
+              <option value="Paseo Familiar de Día">Paseo Familiar</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="modalCantidadPersonas" class="form-label"><i class="fa-solid fa-user-group"></i> Asistentes</label>
+            <select id="modalCantidadPersonas" class="form-select">
+              <option value="1 a 20 personas">1 a 20 personas</option>
+              <option value="21 a 40 personas">21 a 40 personas</option>
+              <option value="41 a 70 personas">41 a 70 personas</option>
+              <option value="Más de 70 personas">Más de 70 personas</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="modalNombreCliente" class="form-label"><i class="fa-regular fa-user"></i> Tu Nombre (Opcional)</label>
+          <input type="text" id="modalNombreCliente" class="form-input" placeholder="Ej: Marcela Gómez">
+        </div>
+
+        <div class="form-group">
+          <label for="modalNotasCliente" class="form-label"><i class="fa-regular fa-comment-dots"></i> Consultas o Requerimientos</label>
+          <textarea id="modalNotasCliente" class="form-input" rows="2" placeholder="¿Deseas quincho para asado, uso de piscina, horario especial?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp btn-quote-submit" id="modalSubmitBookingBtn">
+          <i class="fa-brands fa-whatsapp"></i> Enviar Cotización por WhatsApp
+        </button>
+        
+        <p class="form-security-note">
+          <i class="fa-solid fa-lock"></i> Sin intermediarios ni comisiones. Trato directo con los administradores.
+        </p>
+      </form>
+
     </div>
   </div>
 

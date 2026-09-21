@@ -136,42 +136,137 @@ document.addEventListener('DOMContentLoaded', () => {
   if (shareSiteBtn) shareSiteBtn.addEventListener('click', triggerShare);
   if (mobileShareBtn) mobileShareBtn.addEventListener('click', triggerShare);
 
-  // 6. Interactive WhatsApp Quoting Engine
+  // 6. Interactive WhatsApp Quoting Engine & Modal Controller
+  const quoteModal = document.getElementById('quoteModal');
+  const quoteModalClose = document.getElementById('quoteModalClose');
+  const modalFechaEvento = document.getElementById('modalFechaEvento');
+
+  if (modalFechaEvento) {
+    const today = new Date().toISOString().split('T')[0];
+    modalFechaEvento.min = today;
+  }
+
+  function openQuoteModal() {
+    if (quoteModal) {
+      quoteModal.classList.add('active');
+      quoteModal.setAttribute('aria-hidden', 'false');
+      // Autofocus date input
+      setTimeout(() => {
+        if (modalFechaEvento) {
+          modalFechaEvento.focus();
+          if (modalFechaEvento.showPicker) {
+            try { modalFechaEvento.showPicker(); } catch (_) {}
+          }
+        }
+      }, 150);
+    }
+  }
+
+  function closeQuoteModal() {
+    if (quoteModal) {
+      quoteModal.classList.remove('active');
+      quoteModal.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  // Attach click listener to all buttons that trigger the quote modal
+  document.querySelectorAll('.open-quote-modal').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openQuoteModal();
+    });
+  });
+
+  if (quoteModalClose) {
+    quoteModalClose.addEventListener('click', closeQuoteModal);
+  }
+
+  if (quoteModal) {
+    quoteModal.addEventListener('click', (e) => {
+      if (e.target === quoteModal) {
+        closeQuoteModal();
+      }
+    });
+  }
+
+  // Universal WhatsApp message builder and launcher
+  function sendQuoteToWhatsApp({ fecha, tipo, personas, nombre, notas, source }) {
+    if (!fecha) {
+      alert('Por favor selecciona la fecha deseada de tu evento.');
+      return;
+    }
+
+    // Format Date nicely (DD/MM/AAAA)
+    const dateParts = fecha.split('-');
+    const dateFormatted = `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`;
+
+    let msg = `Hola *Espacio Mañío* 👋🏻, quisiera consultar valores y disponibilidad para un evento:\n\n`;
+    msg += `📅 *Fecha solicitada*: ${dateFormatted}\n`;
+    msg += `🎉 *Tipo de evento*: ${tipo}\n`;
+    msg += `👥 *Cantidad de asistentes*: ${personas}\n`;
+    if (nombre) msg += `👤 *Nombre cliente*: ${nombre}\n`;
+    if (notas) msg += `📝 *Comentarios/Requerimientos*: ${notas}\n`;
+    msg += `\n📍 *Ubicación*: Lonquén Sur, Paradero 38 1/2, Talagante\n`;
+    msg += `🌐 *Web*: ${SITE_URL}\n\n`;
+    msg += `Quedo atento(a) a su pronta respuesta. ¡Muchas gracias!`;
+
+    const encodedMsg = encodeURIComponent(msg);
+    const whatsappUrl = `https://wa.me/${WHATSAPP_MAIN}?text=${encodedMsg}`;
+
+    // Popup-safe opening: try window.open, fallback to location.href if blocked
+    const win = window.open(whatsappUrl, '_blank');
+    if (!win || win.closed || typeof win.closed === 'undefined') {
+      window.location.href = whatsappUrl;
+    }
+
+    if (source === 'modal') {
+      closeQuoteModal();
+    }
+    showToast('Abriendo WhatsApp para enviar tu cotización...');
+  }
+
+  // Handler for Inline Form on Page
   const bookingForm = document.getElementById('bookingForm');
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
-
-      const fecha = document.getElementById('fechaEvento').value;
-      const tipo = document.getElementById('tipoEvento').value;
-      const personas = document.getElementById('cantidadPersonas').value;
-      const nombre = document.getElementById('nombreCliente').value.trim();
-      const notas = document.getElementById('notasCliente').value.trim();
-
-      if (!fecha) {
-        alert('Por favor selecciona la fecha deseada de tu evento.');
-        return;
-      }
-
-      // Format Date nicely (DD/MM/AAAA)
-      const dateParts = fecha.split('-');
-      const dateFormatted = `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}`;
-
-      let msg = `Hola *Espacio Mañío* 👋🏻, quisiera consultar valores y disponibilidad para un evento:\n\n`;
-      msg += `📅 *Fecha solicitada*: ${dateFormatted}\n`;
-      msg += `🎉 *Tipo de evento*: ${tipo}\n`;
-      msg += `👥 *Cantidad de asistentes*: ${personas}\n`;
-      if (nombre) msg += `👤 *Nombre cliente*: ${nombre}\n`;
-      if (notas) msg += `📝 *Comentarios/Requerimientos*: ${notas}\n`;
-      msg += `\n📍 *Ubicación*: Lonquén Sur, Paradero 38 1/2, Talagante\n`;
-      msg += `🌐 *Web*: ${SITE_URL}\n\n`;
-      msg += `Quedo atento(a) a su pronta respuesta. ¡Muchas gracias!`;
-
-      const encodedMsg = encodeURIComponent(msg);
-      const whatsappUrl = `https://wa.me/${WHATSAPP_MAIN}?text=${encodedMsg}`;
-      window.open(whatsappUrl, '_blank');
+      sendQuoteToWhatsApp({
+        fecha: document.getElementById('fechaEvento').value,
+        tipo: document.getElementById('tipoEvento').value,
+        personas: document.getElementById('cantidadPersonas').value,
+        nombre: document.getElementById('nombreCliente').value.trim(),
+        notas: document.getElementById('notasCliente').value.trim(),
+        source: 'inline'
+      });
     });
   }
+
+  // Handler for Modal Form
+  const modalBookingForm = document.getElementById('modalBookingForm');
+  if (modalBookingForm) {
+    modalBookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      sendQuoteToWhatsApp({
+        fecha: document.getElementById('modalFechaEvento').value,
+        tipo: document.getElementById('modalTipoEvento').value,
+        personas: document.getElementById('modalCantidadPersonas').value,
+        nombre: document.getElementById('modalNombreCliente').value.trim(),
+        notas: document.getElementById('modalNotasCliente').value.trim(),
+        source: 'modal'
+      });
+    });
+  }
+
+  // Escape key closes any active modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeQuoteModal();
+      if (imageModal && imageModal.classList.contains('active')) {
+        imageModal.classList.remove('active');
+        imageModal.setAttribute('aria-hidden', 'true');
+      }
+    }
+  });
 
   // 7. Gallery Lightbox Modal
   const imageModal = document.getElementById('imageModal');

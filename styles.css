@@ -1330,6 +1330,53 @@ body {
   color: #03140a;
 }
 
+/* Quotation Modal Specifics */
+.quote-modal-content {
+  max-width: 580px;
+  background: rgba(4, 14, 9, 0.98);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid var(--border-neon);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(0, 245, 171, 0.35);
+  padding: 34px 36px;
+  position: relative;
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+.quote-modal-content .modal-close {
+  top: 18px;
+  right: 18px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.6rem;
+}
+
+.quote-modal-header {
+  margin-bottom: 20px;
+  padding-right: 36px;
+}
+
+.quote-modal-title {
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  font-weight: 900;
+  margin: 6px 0 8px;
+  line-height: 1.2;
+}
+
+.quote-modal-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 580px) {
+  .quote-modal-content {
+    padding: 26px 20px;
+  }
+}
+
 /* Toast Notification */
 .toast-notification {
   position: fixed;
