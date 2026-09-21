@@ -5,11 +5,11 @@ Este documento contiene las plantillas oficiales listas para copiar y pegar en W
 
 ---
 
-### 1. 🟢 Plantilla: Saludo Inicial y Cotización General
+### 1. 🟢 Atajo `/1saludo`: Saludo Inicial y Cotización General
 
 > 🌿 **¡Hola! Bienvenido(a) a Espacio Mañio — Talagante** 🏊✨
 > 
-> Muchas gracias por comunicarte con nosotros. Tu evento o paseo privado estará 100% exclusivo para tu grupo durante toda la jornada.
+> Muchas gracias por comunicarte con nosotros. Tu evento o paseo privado estará **100% exclusivo** para tu grupo durante toda la jornada.
 > 
 > 📍 **Ubicación:** Lonquén Sur, Paradero 38 1/2, Talagante.  
 > ⏰ **Horario de jornada:** 10:00 a 19:30 hrs.
@@ -19,7 +19,9 @@ Este documento contiene las plantillas oficiales listas para copiar y pegar en W
 > 🥩 Quincho techado equipado con parrilla  
 > 🌳 Extensas áreas verdes arboladas  
 > 🚻 Baños y vestidores higienizados  
-> 🚗 Estacionamiento privado cerrado dentro del recinto  
+> 🚗 Estacionamiento privado cerrado para más de 30 vehículos  
+> 
+> 🌐 **Fotos, video aéreo y detalles:** https://dinogonzalez.github.io/Proyecto-Parcela/
 > 
 > Para darte la tarifa exacta y disponibilidad, por favor indícanos:  
 > 🗓️ **Fecha estimada de tu evento:**  
@@ -30,35 +32,40 @@ Este documento contiene las plantillas oficiales listas para copiar y pegar en W
 
 ---
 
-### 2. 👥 Plantilla: Paseos de Empresa & Colegios (Grupos Medianos / Grandes)
+### 2. 👥 Atajo `/2empresas`: Paseos de Empresa & Colegios (Grupos Medianos / Grandes)
 
-> 🏢 **Cotización Paseo de Empresa / Colegio en Espacio Mañio** 🌳
+> 🏢 **Cotización Paseo de Fin de Año / Empresa / Colegio en Espacio Mañio** 🌳
 > 
-> ¡Hola [Nombre]! Excelente elección. Nuestro recinto es ideal para jornadas de integración, esparcimiento y paseos de fin de año.
+> ¡Hola! Excelente elección. Nuestro recinto es ideal para jornadas de integración, esparcimiento y paseos de fin de año con total privacidad y tranquilidad.
 > 
 > **Condiciones de servicio:**
 > 🔒 **Exclusividad Total:** No compartes el recinto con ningún otro grupo.  
-> 🏊 **Seguridad:** Piscina cercada y amplias zonas de sombra para colchonetas y reposeras.  
-> 🥩 **Quincho:** Parrilla de gran tamaño lista para asados masivos.
+> 🏊 **Seguridad:** Piscina cercada y amplias zonas de sombra para descanso.  
+> 🥩 **Quincho Equipado:** Parrilla de gran tamaño lista para asados.  
+> 🚗 **Estacionamiento amplio:** Capacidad cómoda para buses o +30 autos.  
 > 
-> 💬 *Indícanos la fecha deseada y el número exacto de asistentes para enviarte la propuesta formal en PDF.*
+> 🌐 **Ver video del recinto:** https://dinogonzalez.github.io/Proyecto-Parcela/
+> 
+> 💬 *Indícanos la fecha deseada y el número estimado de asistentes para enviarte la propuesta formal y valores.*
 
 ---
 
-### 3. 🏦 Plantilla: Instrucciones de Reserva y Datos de Transferencia
+### 3. 🏦 Atajo `/3reserva`: Instrucciones de Reserva y Datos de Transferencia
 
-> 📌 **¡Tu fecha [FECHA] queda pre-reservada!**
+> 📌 **¡Tu fecha [FECHA] queda pre-reservada en Espacio Mañio!**
 > 
-> Para confirmar la reserva del 100% de la exclusividad de **Espacio Mañio** el día **[FECHA DE EVENTO]**, se debe abonar el 50% del total.
+> Para confirmar y bloquear el 100% de la exclusividad del recinto el día **[FECHA DE EVENTO]**, se debe abonar el **50% de seña**. El 50% restante se cancela el día del evento al ingresar.
 > 
-> **Datos de Transferencia:**  
-> 🏦 **Banco:** [Nombre Banco]  
-> 👤 **Nombre:** [Nombre Titular]  
+> **Datos de Transferencia Oficial:**  
+> 🏦 **Banco:** Banco de Chile / Santander / Estado *(completar titular)*  
+> 👤 **Titular:** Dino González  
 > 🆔 **RUT:** [RUT Titular]  
+> 💳 **Tipo de Cuenta:** Cuenta Corriente / Vista  
+> 🔢 **Nº de Cuenta:** [Número de Cuenta]  
 > 📧 **Correo:** [correo@dominio.cl]  
 > 💰 **Monto a transferir (50% seña):** $[MONTO SEÑA]  
 > 
-> 📩 Una vez realizada la transferencia, envíanos el comprobante por acá para registrar tu reserva y enviarte la confirmación formal. ¡Los esperamos! ☀️
+> 📩 Una vez realizada la transferencia, envíanos el comprobante por este WhatsApp para emitir tu confirmación formal de reserva y enviarte el contrato de arriendo. ¡Los esperamos! ☀️
 
 ---
 

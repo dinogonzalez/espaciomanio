@@ -19,8 +19,7 @@ publicar ni reutilizar datos distintos sin una actualización explícita aquí.
 - **Enlace WhatsApp publicado:** `https://wa.me/56988886174`
 - **WhatsApp de respaldo operativo:** `+56 9 7253 9226`.
   No se publica en web, Instagram, Google, flyers, anuncios ni códigos QR.
-- **Sitio web público:** no hay uno activo actualmente. No se debe publicar ni
-  informar una URL web hasta que se habilite de forma explícita.
+- **Sitio web oficial (GitHub Pages):** `https://dinogonzalez.github.io/Proyecto-Parcela/`
 - **Ubicación:** Lonquén Sur, Paradero 38 1/2, Talagante, Región Metropolitana.
 
 ## Propuesta de valor aprobada
