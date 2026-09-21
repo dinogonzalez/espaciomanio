@@ -168,7 +168,7 @@
         </h1>
 
         <p class="hero-subtitle">
-          Vive una jornada inolvidable con <strong>exclusividad 100% para tu grupo</strong>. Disfruta de nuestra <strong>Espectacular Piscina de 15x7 metros</strong> (105 m² de agua cristalina), quincho equipado para asados, baños higienizados, estacionamiento privado y extensas áreas verdes.
+          Vive una jornada inolvidable con <strong class="highlight-mint">exclusividad 100% para tu grupo</strong>. Disfruta de nuestra <strong class="highlight-cyan">Espectacular Piscina de 15x7 metros</strong> (105 m² de agua cristalina), quincho equipado para asados, baños higienizados, estacionamiento privado y extensas áreas verdes.
         </p>
 
         <!-- Feature Pill Badges -->
@@ -711,6 +711,44 @@
           <i class="fa-solid fa-lock"></i> Sin intermediarios ni comisiones. Trato directo con los administradores.
         </p>
       </form>
+
+    </div>
+  </div>
+
+  <!-- Share & QR Modal -->
+  <div class="modal" id="shareModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content share-modal-content">
+      <button class="modal-close" id="shareModalClose" aria-label="Cerrar ventana">&times;</button>
+      
+      <div class="share-modal-header">
+        <div class="share-modal-brand">
+          <img src="assets/images/logo_badge_blanco.png" alt="Logotipo Oficial Espacio Mañío" class="share-modal-logo">
+        </div>
+        <div class="share-header-badge"><i class="fa-solid fa-qrcode"></i> Código QR Oficial</div>
+        <h3 class="share-modal-title">Comparte <span class="text-gradient">Espacio Mañío</span></h3>
+        <p class="share-modal-subtitle">Muestra este código QR desde tu celular para que lo escaneen en persona, o comparte la invitación formal con un toque.</p>
+      </div>
+
+      <div class="share-qr-wrapper">
+        <div class="share-qr-card">
+          <img src="assets/images/qr_whatsapp.png" alt="Código QR Espacio Mañío" class="share-qr-image" id="shareQrImg">
+          <span class="share-qr-caption"><i class="fa-solid fa-camera"></i> Escanea con tu cámara para contactar</span>
+        </div>
+      </div>
+
+      <div class="share-actions-group">
+        <a href="https://wa.me/?text=%F0%9F%8C%BF%20*ESPACIO%20MA%C3%91%C3%8DO%20%E2%80%94%20Paseos%20%26%20Eventos%20Privados%20en%20Talagante*%0A%F0%9F%93%8D%20Lonqu%C3%A9n%20Sur%2C%20Paradero%2038%20%C2%BD%0A%0ARecinto%20100%25%20exclusivo%20para%20tu%20grupo%3A%0A%E2%99%85%EF%B8%8F%20Espectacular%20Piscina%20de%2015x7m%20(105%20m%C2%B2%20de%20agua%20cristalina)%0A%F0%9F%94%A5%20Quincho%20techado%20y%20parrillas%20para%20asados%0A%F0%9F%8C%B3%20M%C3%A1s%20de%205.000%20m%C2%B2%20de%20%C3%A1reas%20verdes%20y%20sombra%0A%F0%9F%9A%97%20Estacionamiento%20privado%20cerrado%20para%20%2B30%20autos%0A%E2%8F%B0%20Jornada%20de%20arriendo%3A%2010%3A00%20a%2018%3A30%20hrs%0A%0A%F0%9F%93%B2%20Contacto%20y%20Reservas%20WhatsApp%3A%20%2B56%209%208888%206174" target="_blank" rel="noopener" class="btn btn-whatsapp btn-share-action" id="shareWhatsappActionBtn">
+          <i class="fa-brands fa-whatsapp"></i> Compartir por WhatsApp
+        </a>
+
+        <button type="button" class="btn btn-glass btn-share-action" id="copyShareTextBtn">
+          <i class="fa-regular fa-copy"></i> Copiar Invitación con Formato
+        </button>
+
+        <a href="assets/images/qr_whatsapp.png" download="QR_Espacio_Manio_Oficial.png" class="btn btn-glass btn-share-action" id="downloadQrBtn">
+          <i class="fa-solid fa-download"></i> Descargar Imagen del QR
+        </a>
+      </div>
 
     </div>
   </div>

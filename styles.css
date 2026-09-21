@@ -81,12 +81,45 @@ body {
   padding: 0 24px;
 }
 
-/* Text Gradients */
+/* Animated Text Gradients & Glowing Accents */
 .text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, var(--brand-mint) 50%, var(--brand-cyan) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--brand-mint) 25%, var(--brand-cyan) 50%, var(--brand-mint) 75%, #ffffff 100%);
+  background-size: 250% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  animation: moverGradienteTexto 8s ease-in-out infinite alternate;
+}
+
+@keyframes moverGradienteTexto {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Luminous Copy Accents */
+.highlight-mint {
+  color: var(--brand-mint) !important;
+  text-shadow: 0 0 14px rgba(0, 245, 171, 0.45);
+  font-weight: 800;
+}
+
+.highlight-cyan {
+  color: var(--brand-cyan) !important;
+  text-shadow: 0 0 14px rgba(0, 229, 255, 0.45);
+  font-weight: 800;
+}
+
+.highlight-gold {
+  color: var(--accent-gold) !important;
+  text-shadow: 0 0 14px rgba(255, 183, 3, 0.45);
+  font-weight: 800;
 }
 
 /* Top Announcement Bar */
@@ -419,7 +452,49 @@ body {
   overflow: hidden;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(0, 245, 171, 0.16) 0%, rgba(0, 245, 171, 0.03) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  animation: float-glow-1 16s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.14) 0%, rgba(0, 229, 255, 0.03) 50%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  animation: float-glow-2 20s ease-in-out infinite alternate;
+}
+
+@keyframes float-glow-1 {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.85; }
+  50% { transform: translate(60px, -40px) scale(1.15); opacity: 1; }
+  100% { transform: translate(-30px, 40px) scale(0.9); opacity: 0.75; }
+}
+
+@keyframes float-glow-2 {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.8; }
+  50% { transform: translate(-50px, 40px) scale(0.9); opacity: 0.65; }
+  100% { transform: translate(40px, -30px) scale(1.1); opacity: 0.95; }
+}
+
 .hero-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 48px;
@@ -472,6 +547,7 @@ body {
   font-weight: 900;
   letter-spacing: -1px;
   line-height: 1.05;
+  filter: drop-shadow(0 4px 20px rgba(0, 245, 171, 0.28));
 }
 
 .hero-subtitle {
@@ -564,10 +640,13 @@ body {
 
 .stat-number {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   font-weight: 900;
-  color: var(--brand-mint);
+  background: linear-gradient(135deg, #ffffff 0%, var(--brand-mint) 45%, var(--brand-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 1.2;
+  filter: drop-shadow(0 2px 8px rgba(0, 245, 171, 0.35));
 }
 
 .stat-hours-text {
@@ -1468,6 +1547,125 @@ body {
     padding: 26px 20px;
   }
 }
+/* Share & QR Modal Specifics */
+.share-modal-content {
+  max-width: 480px;
+  background: rgba(4, 14, 9, 0.98);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid var(--border-neon);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(0, 245, 171, 0.35);
+  padding: 34px 28px;
+  position: relative;
+  text-align: center;
+}
+
+.share-modal-content .modal-close {
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  font-size: 1.5rem;
+}
+
+.share-modal-header {
+  margin-bottom: 16px;
+}
+
+.share-modal-brand {
+  margin-bottom: 12px;
+}
+
+.share-modal-logo {
+  height: 72px;
+  width: auto;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5), 0 0 18px rgba(0, 245, 171, 0.35);
+  display: inline-block;
+}
+
+.share-header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 245, 171, 0.12);
+  border: 1px solid rgba(0, 245, 171, 0.35);
+  padding: 5px 14px;
+  border-radius: var(--radius-full);
+  color: var(--brand-mint);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.share-modal-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.share-modal-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.share-qr-wrapper {
+  margin: 18px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.share-qr-card {
+  background: #ffffff;
+  padding: 16px 16px 12px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 245, 171, 0.35);
+  border: 2px solid rgba(0, 245, 171, 0.5);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.25s ease;
+}
+
+.share-qr-card:hover {
+  transform: scale(1.02);
+}
+
+.share-qr-image {
+  width: 210px;
+  height: 210px;
+  display: block;
+  border-radius: 8px;
+}
+
+.share-qr-caption {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #03140a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.share-actions-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.btn-share-action {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 0.92rem;
+  justify-content: center;
+}
 
 /* Toast Notification */
 .toast-notification {
@@ -1544,7 +1742,7 @@ body {
     display: flex;
   }
   .nav-brand-logo {
-    height: 74px;
+    height: 68px;
   }
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1564,51 +1762,55 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 14px;
+  }
   .nav-container {
-    gap: 10px;
+    gap: 8px;
   }
   .nav-brand-group {
-    gap: 12px;
+    gap: 10px;
     flex: 1;
     min-width: 0;
   }
   .nav-brand-logo {
-    height: 72px;
+    height: 52px;
+    padding: 3px;
+    border-radius: 12px;
   }
   .nav-brand-text {
     white-space: nowrap !important;
     min-width: 0;
-    overflow: hidden;
+    flex: 1;
+    overflow: visible;
   }
   .nav-brand-name {
-    font-size: clamp(1.1rem, 4.4vw, 1.4rem) !important;
+    font-size: clamp(1.02rem, 4.2vw, 1.25rem) !important;
     white-space: nowrap !important;
     line-height: 1.1;
+    letter-spacing: 0.4px;
   }
   .nav-brand-tag {
-    font-size: clamp(0.68rem, 2.5vw, 0.78rem) !important;
+    font-size: clamp(0.62rem, 2.3vw, 0.72rem) !important;
     white-space: nowrap !important;
+    letter-spacing: -0.2px;
     display: block;
+    margin-top: 2px;
   }
+  /* On mobile, WhatsApp is permanently fixed in the mobile bottom sticky bar and inside the modal, so hiding the header icon completely eliminates text crowding */
   .nav-actions {
-    gap: 8px;
-    flex-shrink: 0;
-  }
-  .nav-actions .btn-share {
     display: none !important;
   }
-  .nav-actions .btn-whatsapp span {
-    display: none;
-  }
-  .nav-actions .btn-whatsapp {
-    padding: 10px;
-    border-radius: var(--radius-full);
+  .hamburger-btn {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
   }
   .mobile-sticky-bar {
     display: flex;
   }
   .whatsapp-float {
-    display: none; /* Replaced by sticky bar */
+    display: none; /* Replaced by mobile sticky bar */
   }
   .gallery-grid {
     grid-template-columns: 1fr;
@@ -1644,6 +1846,18 @@ body {
 }
 
 @media (max-width: 380px) {
+  .container {
+    padding: 0 10px;
+  }
+  .nav-brand-logo {
+    height: 46px;
+  }
+  .nav-brand-name {
+    font-size: 0.98rem !important;
+  }
+  .nav-brand-tag {
+    font-size: 0.58rem !important;
+  }
   .hero-stats {
     gap: 12px 6px;
   }

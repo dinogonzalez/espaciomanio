@@ -95,28 +95,73 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 5. Native Share API & Clipboard Fallback
-  function triggerShare() {
-    if (navigator.share) {
-      navigator.share({
-        title: SITE_TITLE,
-        text: SITE_TEXT,
-        url: SITE_URL
-      }).catch((err) => {
-        if (err.name !== 'AbortError') {
-          copyToClipboard(SITE_URL);
-        }
-      });
-    } else {
-      copyToClipboard(SITE_URL);
+  // 5. Share Modal & Official QR Controller
+  const shareModal = document.getElementById('shareModal');
+  const shareModalClose = document.getElementById('shareModalClose');
+  const shareSiteBtn = document.getElementById('shareSiteBtn');
+  const mobileShareBtn = document.getElementById('mobileShareBtn');
+  const copyShareTextBtn = document.getElementById('copyShareTextBtn');
+
+  const INVITATION_TEXT = `🌿 *ESPACIO MAÑÍO — Paseos & Eventos Privados en Talagante*
+📍 Lonquén Sur, Paradero 38 ½
+
+Recinto 100% exclusivo para tu grupo:
+🏊‍♂️ Espectacular Piscina de 15x7m (105 m² de agua cristalina)
+🔥 Quincho techado y parrillas para asados
+🌳 Más de 5.000 m² de áreas verdes y sombra
+🚗 Estacionamiento privado cerrado para +30 autos
+⏰ Jornada de arriendo: 10:00 a 18:30 hrs
+
+📲 Contacto y Reservas WhatsApp: +56 9 8888 6174
+🌐 Sitio Oficial: https://espaciomanio.cl`;
+
+  function openShareModal() {
+    if (shareModal) {
+      shareModal.classList.add('active');
+      shareModal.setAttribute('aria-hidden', 'false');
     }
   }
 
-  function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(() => {
-      showToast('¡Enlace de Espacio Mañío copiado al portapapeles!');
-    }).catch(() => {
-      showToast('Enlace: ' + text);
+  function closeShareModal() {
+    if (shareModal) {
+      shareModal.classList.remove('active');
+      shareModal.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  if (shareSiteBtn) {
+    shareSiteBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openShareModal();
+    });
+  }
+
+  if (mobileShareBtn) {
+    mobileShareBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openShareModal();
+    });
+  }
+
+  if (shareModalClose) {
+    shareModalClose.addEventListener('click', closeShareModal);
+  }
+
+  if (shareModal) {
+    shareModal.addEventListener('click', (e) => {
+      if (e.target === shareModal) {
+        closeShareModal();
+      }
+    });
+  }
+
+  if (copyShareTextBtn) {
+    copyShareTextBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(INVITATION_TEXT).then(() => {
+        showToast('¡Invitación corporativa copiada al portapapeles!');
+      }).catch(() => {
+        showToast('Texto copiado');
+      });
     });
   }
 
@@ -130,11 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 3200);
     }
   }
-
-  const shareSiteBtn = document.getElementById('shareSiteBtn');
-  const mobileShareBtn = document.getElementById('mobileShareBtn');
-  if (shareSiteBtn) shareSiteBtn.addEventListener('click', triggerShare);
-  if (mobileShareBtn) mobileShareBtn.addEventListener('click', triggerShare);
 
   // 6. Interactive WhatsApp Quoting Engine & Modal Controller
   const quoteModal = document.getElementById('quoteModal');
