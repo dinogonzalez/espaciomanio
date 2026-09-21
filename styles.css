@@ -157,44 +157,47 @@ body {
 }
 
 .nav-brand-logo {
-  height: 74px;
+  height: 86px;
   width: auto;
   background: #ffffff;
-  padding: 4px;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45), 0 0 16px rgba(0, 245, 171, 0.3);
+  padding: 5px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45), 0 0 18px rgba(0, 245, 171, 0.3);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: block;
 }
 
 .nav-brand-group:hover .nav-brand-logo {
-  transform: scale(1.06) translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 24px rgba(0, 245, 171, 0.65);
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 26px rgba(0, 245, 171, 0.65);
 }
 
 .nav-brand-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  white-space: nowrap !important;
 }
 
 .nav-brand-name {
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 1.68rem;
   font-weight: 900;
   letter-spacing: 1.2px;
   line-height: 1.1;
   background: linear-gradient(135deg, #ffffff 20%, var(--brand-mint) 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap !important;
 }
 
 .nav-brand-tag {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
   font-weight: 500;
-  margin-top: 2px;
+  margin-top: 3px;
+  white-space: nowrap !important;
 }
 
 /* Navigation Links */
@@ -359,19 +362,32 @@ body {
 }
 
 .btn-instagram {
-  background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
-  color: #ffffff;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 22px rgba(225, 48, 108, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   white-space: nowrap !important;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn-instagram:hover {
   transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 12px 32px rgba(225, 48, 108, 0.6);
+  box-shadow: 0 12px 32px rgba(225, 48, 108, 0.65), 0 0 20px rgba(240, 148, 51, 0.45);
   filter: brightness(1.1);
+  color: #ffffff !important;
 }
 
 .btn-instagram:active {
   transform: translateY(-1px) scale(0.98);
+}
+
+.btn-instagram-sm {
+  padding: 8px 18px;
+  font-size: 0.88rem;
+  border-radius: var(--radius-full);
 }
 
 /* Mobile Hamburger */
@@ -1060,13 +1076,13 @@ body {
 }
 
 .seal-logo {
-  height: 80px;
+  height: 95px;
   width: auto;
   background: #ffffff;
-  padding: 4px;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45), 0 0 16px rgba(0, 245, 171, 0.25);
+  padding: 6px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 245, 171, 0.3);
   display: block;
 }
 
@@ -1361,6 +1377,36 @@ body {
   color: #03140a;
 }
 
+/* Gallery Social Banner */
+.gallery-social-banner {
+  margin-top: 36px;
+  background: linear-gradient(135deg, rgba(8, 24, 16, 0.95) 0%, rgba(4, 14, 9, 0.98) 100%);
+  border: 1px solid var(--border-neon);
+  border-radius: var(--radius-md);
+  padding: 24px 32px;
+  box-shadow: var(--shadow-card), 0 0 20px rgba(0, 245, 171, 0.15);
+}
+
+.gallery-social-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-social-text h4 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.gallery-social-text p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
 /* Quotation Modal Specifics */
 .quote-modal-content {
   max-width: 580px;
@@ -1386,6 +1432,21 @@ body {
 .quote-modal-header {
   margin-bottom: 20px;
   padding-right: 36px;
+}
+
+.quote-modal-brand {
+  margin-bottom: 12px;
+}
+
+.quote-modal-logo {
+  height: 90px;
+  width: auto;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5), 0 0 16px rgba(0, 245, 171, 0.3);
+  display: inline-block;
 }
 
 .quote-modal-title {
@@ -1483,7 +1544,7 @@ body {
     display: flex;
   }
   .nav-brand-logo {
-    height: 60px;
+    height: 74px;
   }
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1503,17 +1564,43 @@ body {
 }
 
 @media (max-width: 768px) {
+  .nav-container {
+    gap: 10px;
+  }
+  .nav-brand-group {
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+  }
+  .nav-brand-logo {
+    height: 72px;
+  }
+  .nav-brand-text {
+    white-space: nowrap !important;
+    min-width: 0;
+    overflow: hidden;
+  }
+  .nav-brand-name {
+    font-size: clamp(1.1rem, 4.4vw, 1.4rem) !important;
+    white-space: nowrap !important;
+    line-height: 1.1;
+  }
+  .nav-brand-tag {
+    font-size: clamp(0.68rem, 2.5vw, 0.78rem) !important;
+    white-space: nowrap !important;
+    display: block;
+  }
+  .nav-actions {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .nav-actions .btn-share {
+    display: none !important;
+  }
   .nav-actions .btn-whatsapp span {
     display: none;
   }
   .nav-actions .btn-whatsapp {
-    padding: 10px;
-    border-radius: var(--radius-full);
-  }
-  .share-btn-text {
-    display: none;
-  }
-  .btn-share {
     padding: 10px;
     border-radius: var(--radius-full);
   }
