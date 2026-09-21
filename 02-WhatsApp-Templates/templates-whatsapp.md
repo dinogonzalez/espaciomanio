@@ -12,7 +12,7 @@ Este documento contiene las plantillas oficiales listas para copiar y pegar en W
 > Muchas gracias por comunicarte con nosotros. Tu evento o paseo privado estará **100% exclusivo** para tu grupo durante toda la jornada.
 > 
 > 📍 **Ubicación:** Lonquén Sur, Paradero 38 1/2, Talagante.  
-> ⏰ **Horario de jornada:** 10:00 a 19:30 hrs.
+> ⏰ **Horario de jornada:** 10:00 a 18:30 hrs.
 > 
 > **Nuestras instalaciones incluyen:**
 > 🏊‍♂️ Espectacular Piscina de 15 x 7 metros (105 m² de agua cristalina)  

@@ -525,6 +525,12 @@ body {
   margin-top: 10px;
 }
 
+.tag-hours {
+  background: rgba(0, 245, 171, 0.16);
+  border: 1px solid var(--brand-mint);
+  color: #e6fffa;
+}
+
 /* Trust Stats */
 .hero-stats {
   display: grid;
@@ -545,6 +551,13 @@ body {
   font-size: 1.5rem;
   font-weight: 900;
   color: var(--brand-mint);
+  line-height: 1.2;
+}
+
+.stat-hours-text {
+  font-size: clamp(1.05rem, 1.25vw, 1.35rem);
+  white-space: nowrap;
+  letter-spacing: -0.3px;
 }
 
 .stat-label {
@@ -1049,8 +1062,26 @@ body {
 .seal-logo {
   height: 80px;
   width: auto;
-  border-radius: 12px;
-  filter: drop-shadow(0 4px 15px rgba(212, 163, 115, 0.4));
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45), 0 0 16px rgba(0, 245, 171, 0.25);
+  display: block;
+}
+
+.location-contact-link {
+  color: var(--brand-mint);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.location-contact-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .seal-title {
@@ -1503,8 +1534,34 @@ body {
   }
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+  }
+  .stat-item {
+    min-width: 0;
+  }
+  .stat-number {
+    font-size: clamp(1.2rem, 4.5vw, 1.45rem);
+    white-space: nowrap;
+    overflow: visible;
+  }
+  .stat-hours-text {
+    font-size: clamp(0.96rem, 3.5vw, 1.15rem) !important;
+    white-space: nowrap !important;
+    letter-spacing: -0.4px;
+    display: block;
+    line-height: 1.2;
   }
   .form-row {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-stats {
+    gap: 12px 6px;
+  }
+  .stat-hours-text {
+    font-size: 0.88rem !important;
+    letter-spacing: -0.5px;
   }
 }

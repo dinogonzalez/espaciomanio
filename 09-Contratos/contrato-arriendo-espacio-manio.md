@@ -11,7 +11,7 @@ Se ha convenido el siguiente contrato de arriendo temporal de espacio para event
 ---
 
 ### PRIMERA: OBJETO DEL CONTRATO
-El Arrendador cede temporalmente el uso exclusivo de las instalaciones del recinto **Espacio Mañio**, ubicado en **Lonquén Sur, Paradero 38 1/2, Talagante**, para la realización de un evento privado de tipo **[PASEO FAMILIAR / EVENTO EMPRESA / CUMPLEAÑOS / OTRO]**, el día **[FECHA DEL EVENTO]**, en el horario convenido de **10:00 a 19:30 horas**.
+El Arrendador cede temporalmente el uso exclusivo de las instalaciones del recinto **Espacio Mañio**, ubicado en **Lonquén Sur, Paradero 38 1/2, Talagante**, para la realización de un evento privado de tipo **[PASEO FAMILIAR / EVENTO EMPRESA / CUMPLEAÑOS / OTRO]**, el día **[FECHA DEL EVENTO]**, en el horario convenido de **10:00 a 18:30 horas**.
 
 ---
 
@@ -40,7 +40,7 @@ El arriendo incluye el derecho de uso exclusivo de:
 ---
 
 ### QUINTA: OBLIGACIONES Y NORMAS DE USO DEL ARRENDATARIO
-1. **Horario:** Respetar estrictamente el horario de término (19:30 hrs).
+1. **Horario:** Respetar estrictamente el horario de término (18:30 hrs).
 2. **Seguridad en Piscina:** Queda strictly prohibido el ingreso a la piscina bajo la influencia del alcohol o sustancias. Los menores de edad deben estar en todo momento bajo la supervisión directa de sus padres o adultos responsables.
 3. **Cuidado del Recinto:** Entregar las instalaciones en buen estado. En caso de daños causados a las estructuras, piscina, parrilla o vegetación, el Arrendatario responderá por los costos de reparación.
 4. **Música y Ruido:** Respetar los niveles de sonido adecuados para mantener la tranquilidad del entorno rural.

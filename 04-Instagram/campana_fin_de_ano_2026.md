@@ -16,12 +16,12 @@ Este documento contiene el material listo para copiar, pegar y publicar en las r
 Si estás organizando el paseo de curso de tu colegio, la fiesta de fin de año de tu empresa o una celebración familiar inolvidable, en ESPACIO MAÑIO te garantizamos EXCLUSIVIDAD TOTAL: el recinto completo cerrado solo para tu grupo.
 
 🌟 ¿Qué incluye tu jornada privada?
-🏊 Espectacular piscina de 15 x 7 metros (105 m² de agua cristalina y solárium).
+🏊 Espectacular piscina de 15 x 7 metros (105 m² de agua cristalina).
 🥩 Quincho techado equipado con gran parrilla y mesas.
 🌳 Amplias áreas verdes con sombra de árboles nativos y sectores de descanso.
 🚗 Estacionamiento privado cerrado para más de 30 vehículos.
 🚻 Baños y vestidores higienizados.
-⏰ Horario extendido de 10:00 a 19:30 hrs.
+⏰ Horario de 10:00 a 18:30 hrs.
 
 📍 Estamos ubicados en Lonquén Sur, Paradero 38 1/2, Comuna de Talagante (a solo minutos de Santiago).
 
@@ -46,9 +46,9 @@ Si estás organizando el paseo de curso de tu colegio, la fiesta de fin de año 
 
 ---
 
-## 🎬 3. Guion para Reel / Video con Dron (19 segundos)
+## 🎬 3. Guion para Reel / Video con Dron (Panorámica Completa)
 
-Utiliza el video ya preparado en [`Fotos Dron/Videos/video_dron_vista_piscina_02.mp4`](file:///C:/Users/dinog/OneDrive/Desktop/Proyectos%20de%20Trabajo/Proyecto%20Parcela/Fotos%20Dron/Videos/video_dron_vista_piscina_02.mp4).
+Utiliza el Reel ya preparado en formato vertical 9:16 en tu Escritorio: [`C:\Users\dinog\OneDrive\Desktop\REEL_DRON_PANORAMICA_ESPACIO_MANIO.mp4`](file:///C:/Users/dinog/OneDrive/Desktop/REEL_DRON_PANORAMICA_ESPACIO_MANIO.mp4) (o en `04-Instagram/reel_panoramica_dron_espacio_manio.mp4`).
 
 ### Estructura del Reel:
 * **Audio sugerido en Instagram:** Buscar audio en tendencia de ambiente veraniego / viajes (ej. sonido acústico o house melódico).
