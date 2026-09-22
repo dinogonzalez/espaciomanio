@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const WHATSAPP_MAIN = '56988886174';
   const SITE_URL = 'https://dinogonzalez.github.io/espaciomanio/';
   const SITE_TITLE = 'Espacio Mañío — Paseos & Eventos Privados en Talagante';
-  const SITE_TEXT = 'Recinto 100% exclusivo para eventos, paseos de fin de año y empresas. Piscina de 15x7m, quincho y áreas verdes.';
+  const SITE_TEXT = 'Recinto 100% exclusivo para eventos, paseos de fin de año y empresas. Piscina de 15x7 metros, quincho y áreas verdes.';
 
   // 1. Set Minimum Date for Reservation to Today
   const dateInput = document.getElementById('fechaEvento');
