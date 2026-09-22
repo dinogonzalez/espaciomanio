@@ -316,41 +316,83 @@ body {
 }
 
 .btn-share {
-  background: linear-gradient(135deg, rgba(0, 245, 171, 0.18) 0%, rgba(0, 210, 255, 0.12) 100%);
-  border: 1.5px solid var(--brand-mint);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.28) 0%, rgba(0, 240, 255, 0.22) 100%);
+  border: 2px solid #00FF9D;
   color: #ffffff;
   padding: 11px 22px;
   border-radius: var(--radius-sm);
   cursor: pointer;
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.95rem;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
   white-space: nowrap !important;
   flex-shrink: 0;
-  box-shadow: 0 4px 18px rgba(0, 245, 171, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 18px rgba(0, 255, 157, 0.35), 0 0 16px rgba(0, 240, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  animation: sharePulse 3.5s ease-in-out infinite;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.btn-share::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -120%;
+  width: 70%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  animation: shareShimmer 4.5s infinite cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+@keyframes shareShimmer {
+  0% {
+    left: -120%;
+  }
+  25%, 100% {
+    left: 220%;
+  }
+}
+
+@keyframes sharePulse {
+  0%, 100% {
+    box-shadow: 0 4px 18px rgba(0, 255, 157, 0.35), 0 0 16px rgba(0, 240, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    border-color: #00FF9D;
+  }
+  50% {
+    box-shadow: 0 6px 26px rgba(0, 255, 157, 0.7), 0 0 30px rgba(0, 240, 255, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    border-color: #00F0FF;
+  }
+}
+
 .btn-share i {
-  color: var(--brand-mint);
-  font-size: 1.05rem;
+  color: #00FF9D;
+  font-size: 1.15rem;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 157, 0.6));
   transition: transform 0.25s ease;
 }
 
 .btn-share:hover {
-  background: linear-gradient(135deg, rgba(0, 245, 171, 0.32) 0%, rgba(0, 210, 255, 0.26) 100%);
-  border-color: #00FF9D;
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.42) 0%, rgba(0, 240, 255, 0.35) 100%);
+  border-color: #ffffff;
   color: #ffffff;
-  transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 8px 28px rgba(0, 245, 171, 0.55), 0 0 20px rgba(0, 229, 255, 0.35);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 32px rgba(0, 255, 157, 0.8), 0 0 35px rgba(0, 240, 255, 0.6);
 }
 
 .btn-share:hover i {
-  transform: rotate(15deg) scale(1.15);
+  transform: scale(1.2) rotate(10deg);
 }
 
 .btn-share:active {
@@ -1379,9 +1421,15 @@ body {
 
 .btn-mobile-share {
   flex: 1;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(0, 255, 157, 0.25) 0%, rgba(0, 240, 255, 0.18) 100%);
+  border: 1.5px solid #00FF9D;
   color: #ffffff;
+  box-shadow: 0 0 18px rgba(0, 255, 157, 0.4);
+}
+
+.btn-mobile-share i {
+  color: #00FF9D;
+  font-size: 1.1rem;
 }
 
 /* Floating WhatsApp Desktop */
