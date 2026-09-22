@@ -204,13 +204,13 @@ body {
 }
 
 .nav-brand-logo {
-  height: 86px;
+  height: 96px;
   width: auto;
   background: #ffffff;
   padding: 5px;
-  border-radius: 16px;
+  border-radius: 18px;
   border: 1.5px solid rgba(0, 255, 157, 0.45);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45), 0 0 22px rgba(0, 255, 157, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 24px rgba(0, 255, 157, 0.45);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: block;
 }
@@ -553,25 +553,28 @@ body {
 .corporate-badge {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   background: rgba(0, 245, 171, 0.1);
-  border: 1px solid rgba(0, 245, 171, 0.3);
-  padding: 8px 18px;
+  border: 1px solid rgba(0, 245, 171, 0.35);
+  padding: 6px 18px;
   border-radius: var(--radius-full);
   color: var(--brand-mint);
-  font-size: 0.86rem;
+  font-size: 0.9rem;
   font-weight: 600;
   width: fit-content;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 16px rgba(0, 245, 171, 0.2);
 }
 
 .badge-mini-logo {
-  height: 32px;
+  height: 48px;
   width: auto;
   background: #ffffff;
   padding: 3px;
-  border-radius: 8px;
+  border-radius: 10px;
   display: inline-block;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 255, 157, 0.35);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5), 0 0 14px rgba(0, 255, 157, 0.45);
+  border: 1px solid rgba(0, 255, 157, 0.4);
+  object-fit: contain;
 }
 
 .brand-eyebrow {
@@ -1208,13 +1211,14 @@ body {
 }
 
 .seal-logo {
-  height: 115px;
-  width: auto;
+  height: 165px !important;
+  max-height: 165px !important;
+  width: auto !important;
   background: #ffffff;
-  padding: 6px 12px;
-  border-radius: 20px;
-  border: 1.5px solid rgba(0, 255, 157, 0.45);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 28px rgba(0, 255, 157, 0.5);
+  padding: 8px 16px;
+  border-radius: 22px;
+  border: 2px solid rgba(0, 255, 157, 0.5);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.65), 0 0 35px rgba(0, 255, 157, 0.55);
   display: block;
   object-fit: contain;
 }
@@ -1278,14 +1282,16 @@ body {
 }
 
 .footer-logo {
-  height: 88px;
-  width: auto;
+  height: 186px !important;
+  max-height: 186px !important;
+  width: auto !important;
   background: #ffffff;
-  padding: 5px 10px;
-  border-radius: 14px;
-  border: 1.5px solid rgba(0, 255, 157, 0.4);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.55), 0 0 24px rgba(0, 255, 157, 0.45);
+  padding: 8px 16px;
+  border-radius: 22px;
+  border: 2px solid rgba(0, 255, 157, 0.45);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 255, 157, 0.5);
   display: block;
+  object-fit: contain;
 }
 
 .footer-brand-title {
@@ -1608,14 +1614,14 @@ body {
 }
 
 .card-brand-logo {
-  height: 68px !important;
-  max-height: 68px !important;
+  height: 110px !important;
+  max-height: 110px !important;
   width: auto !important;
-  max-width: 190px !important;
+  max-width: 280px !important;
   background: #ffffff;
-  padding: 4px 8px;
-  border-radius: 12px;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.55), 0 0 22px rgba(0, 255, 157, 0.45);
+  padding: 6px 12px;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6), 0 0 26px rgba(0, 255, 157, 0.45);
   display: inline-block;
   border: 1.5px solid rgba(0, 255, 157, 0.4);
   object-fit: contain;
