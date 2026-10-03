@@ -381,18 +381,27 @@ Sitio Web Oficial: https://dinogonzalez.github.io/espaciomanio/`;
       return url;
     }
 
-    // Convertir enlaces en el DOM para abrir directo WhatsApp Web en PC
-    document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]').forEach(link => {
-      link.href = convertToWhatsAppWeb(link.href);
-    });
+    function rewriteLinks() {
+      document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]').forEach(link => {
+        link.href = convertToWhatsAppWeb(link.href);
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      });
+    }
 
-    // Interceptar clicks dinámicos
+    // Reescribir enlaces en el DOM inicial
+    rewriteLinks();
+
+    // Interceptar clicks para forzar la navegación directa a WhatsApp Web en escritorio
     document.addEventListener('click', (event) => {
-      const link = event.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+      const link = event.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="web.whatsapp.com"]');
       if (!link) return;
-      const webUrl = convertToWhatsAppWeb(link.href);
-      if (webUrl !== link.href) {
-        link.href = webUrl;
+
+      const targetUrl = convertToWhatsAppWeb(link.href);
+      if (targetUrl) {
+        event.preventDefault();
+        event.stopPropagation();
+        window.open(targetUrl, '_blank', 'noopener,noreferrer');
       }
     }, { capture: true });
   }
