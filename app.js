@@ -264,7 +264,10 @@ Sitio Web Oficial: https://dinogonzalez.github.io/espaciomanio/`;
     msg += `Agradezco de antemano su pronta respuesta y cotización formal.`;
 
     const encodedMsg = encodeURIComponent(msg);
-    const whatsappUrl = `https://wa.me/${WHATSAPP_MAIN}?text=${encodedMsg}`;
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const whatsappUrl = isMobile
+      ? `https://wa.me/${WHATSAPP_MAIN}?text=${encodedMsg}`
+      : `https://web.whatsapp.com/send?phone=${WHATSAPP_MAIN}&text=${encodedMsg}`;
 
     // Popup-safe opening: try window.open, fallback to location.href if blocked
     const win = window.open(whatsappUrl, '_blank');
@@ -354,4 +357,45 @@ Sitio Web Oficial: https://dinogonzalez.github.io/espaciomanio/`;
       }
     });
   }
+
+  // 8. Desktop WhatsApp Web Dispatcher (Bypasses intermediate screen on PC)
+  function initDesktopWhatsAppDispatcher() {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (isMobile) return; // En móviles se mantiene wa.me nativo para abrir la app instalada
+
+    function convertToWhatsAppWeb(url) {
+      try {
+        const parsed = new URL(url, window.location.href);
+        if (parsed.hostname === 'wa.me' || parsed.hostname === 'api.whatsapp.com') {
+          const pathPhone = parsed.pathname.replace(/^\//, '').replace(/^send\/?/, '').replace(/\D/g, '');
+          const queryPhone = (parsed.searchParams.get('phone') || '').replace(/\D/g, '');
+          const phone = queryPhone || pathPhone;
+          const text = parsed.searchParams.get('text') || '';
+          if (phone) {
+            return `https://web.whatsapp.com/send?phone=${encodeURIComponent(phone)}${text ? `&text=${encodeURIComponent(text)}` : ''}`;
+          } else if (text) {
+            return `https://web.whatsapp.com/send?text=${encodeURIComponent(text)}`;
+          }
+        }
+      } catch (e) {}
+      return url;
+    }
+
+    // Convertir enlaces en el DOM para abrir directo WhatsApp Web en PC
+    document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"]').forEach(link => {
+      link.href = convertToWhatsAppWeb(link.href);
+    });
+
+    // Interceptar clicks dinámicos
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+      if (!link) return;
+      const webUrl = convertToWhatsAppWeb(link.href);
+      if (webUrl !== link.href) {
+        link.href = webUrl;
+      }
+    }, { capture: true });
+  }
+
+  initDesktopWhatsAppDispatcher();
 });
